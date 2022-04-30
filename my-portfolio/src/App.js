@@ -25,7 +25,6 @@ function App() {
       <nav>
         <div className="left"></div>
         <div className="name">
-          <h1>Kyle Sousa</h1>
         </div>
         <div className="right">
           <ul className={"nav-links " + menu}>

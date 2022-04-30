@@ -42,21 +42,21 @@ function App() {
           <a href="#Projects"><h1>Projects</h1></a>
           <a href="#Contact"><h1>Contact</h1></a>
         </div>
-        
-      <body>
-        <div className="About">
-
+        <div className='pages'>
+        <div className="Page About" id="About">
+          <h1>Who are you?</h1>
+          <h1>Sousa...Kyle Sousa</h1>
         </div>
-        <div className="Projects">
-
+        <div className="Page Projects" id="Projects">
+          <h1>I told you I'd find you</h1>
         </div>
-        <div className="Skills">
-
+        <div className="Page Skills" id="Skills">
+          <h1>I have a particular set of skills...</h1>
         </div>
-        <div className="Contact">
-
+        <div className="Page Contact" id="Contact">
+          <h1>I told you you'd find me</h1>
         </div>
-      </body>
+        </div>
     </div>
   );
 }

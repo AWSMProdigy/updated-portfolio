@@ -7,8 +7,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   cursor: pointer;
   transition: all .2s ease-in-out;
   border: 3px solid #fff
@@ -79,6 +79,7 @@ nav{
 
 .right{
   justify-content: flex-end;
+  align-items: center;
 }
 
 .right i{
@@ -86,9 +87,15 @@ nav{
 }
 
 .nav-links{
-  display: none;
   justify-content: flex-end;
   margin-right: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.nav-links.false{
+  transform: translateX(50px);
+  visibility: hidden;
+  opacity: 0;
 }
 
 .nav-links a{
@@ -131,6 +138,10 @@ nav{
   display: flex;
 }
 
+.mob-false, .mob-true{
+  display: none;
+}
+
 @media (max-width:1280px){
   .nav-links{
     display: none;
@@ -147,13 +158,17 @@ nav{
     width: 100%;
     text-align: center;
     flex-direction: column;
+    display: none;
   }
 
   .right i{
     display: block;
   }
 
-  .true{
+  .false, .true{
+    display: none;
+  }
+  .mob-true{
     display: flex;
   }
 

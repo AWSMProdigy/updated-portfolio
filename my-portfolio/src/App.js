@@ -2,18 +2,29 @@ import logo from './logo.svg';
 import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
 
+
 import React, { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 
 function App() {
-  const [mobile, setMobile] = useState("closed")
-
+  const [mobile, setMobile] = useState("closed");
+  
   const showMobile = () =>{
+    const mobBtn = document.querySelector('.mob-btn');
     if(mobile === "open"){
         setMobile("closed")
+        mobBtn.classList.remove('open');
+
     }else{
-      setMobile("open");
+        setMobile("open");
+        mobBtn.classList.add('open');
     }
   }
   return (
@@ -24,7 +35,9 @@ function App() {
           <h1>Kyle Sousa</h1>
         </div>
         <div className="right">
-          <i className="fa fa-solid fa-bars" onClick={showMobile} />
+          <div className='mob-btn' onClick={showMobile}>
+            <div className="mob-btn__burger"></div>
+          </div>
           <ul className="nav-links">
             <a href="#About">About</a>
             <a href="#Projects">Projects</a>
@@ -37,20 +50,20 @@ function App() {
           <a href="#Projects"><h1>Projects</h1></a>
           <a href="#Contact"><h1>Contact</h1></a>
         </div>
-      <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body>
+        <div className="About">
+
+        </div>
+        <div className="Projects">
+
+        </div>
+        <div className="Skills">
+
+        </div>
+        <div className="Contact">
+
+        </div>
+      </body>
     </div>
   );
 }

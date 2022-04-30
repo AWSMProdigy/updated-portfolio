@@ -30,6 +30,7 @@ function App() {
           <ul className={"nav-links " + menu}>
             <a href="#About">About</a>
             <a href="#Projects">Projects</a>
+            <a href="#Skills">Skills</a>
             <a href="#Contact">Contact</a>
           </ul>
           <div className='mob-btn' onClick={showmenu}>
@@ -40,6 +41,7 @@ function App() {
         <div className={"nav-links-mobile " + mobMenu} onClick={showmenu}>
           <a href="#About"><h1>About</h1></a>
           <a href="#Projects"><h1>Projects</h1></a>
+          <a href="#Skills"><h1>Skills</h1></a>
           <a href="#Contact"><h1>Contact</h1></a>
         </div>
         <div className='pages'>

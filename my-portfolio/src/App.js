@@ -90,7 +90,17 @@ function App() {
           <h1>I have a particular set of skills...</h1>
         </div>
         <div className="Page Contact" id="Contact">
-          <h1>I told you you'd find me</h1>
+          <h1>Did you leave a calling card?</h1>
+          <h1>I always do</h1>
+          <div className="calling-card">
+            <div>
+              <div className="Name">Kyle Sousa</div>
+              <div className="Phone">239-770-0763</div>
+              <div className="Email">Kylesousa756@gmail.com</div>
+              <div className="LinkedIn"></div>
+              <div className="Github"></div>
+            </div>
+          </div>
         </div>
         </div>
     </div>

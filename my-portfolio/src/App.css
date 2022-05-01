@@ -192,11 +192,19 @@ nav{
 }
 
 .headshot{
-  filter: brightness(2%);
+  filter: brightness(10%);
 }
 
 .mouse {
   clip-path: circle(0em at 0 0);
+}
+
+.calling-card{
+  display: flex;
+  flex-direction: row;
+  transform: rotate(20deg);
+  background: rgb(226, 203, 100);
+  box-shadow: 3px -4px;
 }
 
 

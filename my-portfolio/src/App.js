@@ -91,7 +91,7 @@ function App() {
         </div>
         <div className="Page Contact" id="Contact">
           <h1>Did you leave a calling card?</h1>
-          <h1>I always do</h1>
+          <h1>Always do</h1>
           <div className="calling-card">
             <div>
               <div className="Name">Kyle Sousa</div>

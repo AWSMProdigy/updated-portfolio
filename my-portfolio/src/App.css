@@ -169,7 +169,8 @@ nav{
 }
 
 .Contact{
-  background-color: white;
+  background: radial-gradient(rgb(114, 66, 11), black)
+  
 }
 
 .imgBox {
@@ -192,7 +193,7 @@ nav{
 }
 
 .headshot{
-  filter: brightness(10%);
+  filter: brightness(5%);
 }
 
 .mouse {

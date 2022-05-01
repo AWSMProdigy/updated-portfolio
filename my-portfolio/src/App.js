@@ -1,9 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
 import React, { useState } from "react";
 
 function App() {
+
+  window.addEventListener('load', (event) => {
+    let imgBox = document.querySelector('.imgBox');
+    let mouse = document.querySelector('.mouse');
+    let hovered = false;
+    let revealed = false;
+
+    const lightPortrait = () =>{
+      revealed = true;
+      mouse.style.transition = `all .5s ease-in-out`;
+      mouse.style.clipPath = `circle(100%)`;
+    }
+
+
+
+    imgBox.addEventListener('mousemove', (e) => {
+    if(!hovered){
+      console.log("Hovered");
+      window.setTimeout(lightPortrait, 3000);
+      hovered = true;
+    }
+    if(revealed){
+      return;
+    }
+    mouse.style.clipPath = 
+      `circle(10em at ${e.offsetX}px ${e.offsetY}px)`;
+  });
+  })
   const [menu, setmenu] = useState("false");
   const [mobMenu, setMobMenu] = useState("mob-false");
   
@@ -39,15 +66,22 @@ function App() {
         </div>
         </nav>
         <div className={"nav-links-mobile " + mobMenu} onClick={showmenu}>
-          <a href="#About"><h1>About</h1></a>
-          <a href="#Projects"><h1>Projects</h1></a>
-          <a href="#Skills"><h1>Skills</h1></a>
-          <a href="#Contact"><h1>Contact</h1></a>
+          <a href="#About" id="aboutLink"><h1>About</h1></a>
+          <a href="#Projects" id="projectLink"><h1>Projects</h1></a>
+          <a href="#Skills" id="skillsLink"><h1>Skills</h1></a>
+          <a href="#Contact" id="contactLink"><h1>Contact</h1></a>
         </div>
         <div className='pages'>
         <div className="Page About" id="About">
-          <h1>Who are you?</h1>
-          <h1>Sousa...Kyle Sousa</h1>
+          <h1>Introduce yourself Mr...</h1>
+          <h2>Sousa...</h2>
+          <div className='imgBox'>
+            <div className="headshot"></div>  
+            <div className="mouse"></div>
+          </div>
+          <h1>Kyle Sousa</h1>
+          <h2>A full-stack web developer with an eye for quality and a desire for improvement</h2>
+          <h3>With college, bootcamp, and real world experience, I aim to please</h3>
         </div>
         <div className="Page Projects" id="Projects">
           <h1>I told you I'd find you</h1>

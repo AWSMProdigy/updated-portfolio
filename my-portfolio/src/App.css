@@ -1,5 +1,6 @@
 * {
   scroll-behavior: smooth;
+  margin: 0;
 }
 
 body {
@@ -113,6 +114,10 @@ nav{
   opacity: 0;
 }
 
+.nav-links.false a{
+  pointer-events: none;
+}
+
 .nav-links a{
   display:inline-block;
   list-style-type:none;
@@ -145,6 +150,14 @@ nav{
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.About{
+  color: white;
 }
 
 .Projects{
@@ -158,6 +171,34 @@ nav{
 .Contact{
   background-color: white;
 }
+
+.imgBox {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  cursor: none;
+}
+
+.headshot, .mouse {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  background-image: url("../public/images/me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.headshot{
+  filter: brightness(2%);
+}
+
+.mouse {
+  clip-path: circle(0em at 0 0);
+}
+
 
 @media (max-width:1280px){
   nav{

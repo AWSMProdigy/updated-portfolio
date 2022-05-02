@@ -16,7 +16,9 @@ function App() {
       mouse.style.clipPath = `circle(100%)`;
     }
 
+    const decryptWord = (wordArray) =>{
 
+    }
 
     imgBox.addEventListener('mousemove', (e) => {
     if(!hovered){
@@ -36,15 +38,22 @@ function App() {
   
   const showmenu = () =>{
     const mobBtn = document.querySelector('.mob-btn');
+    const menuItem = document.querySelector('.nav-links');
+    const mobMenuItem = document.querySelector('.nav-links-mobile');
+    console.log(menuItem.children);
+
+    // Close menu
     if(menu === "true"){
         setmenu("false");
         setMobMenu("mob-false");
         mobBtn.classList.remove('open');
 
+    // Open up menu
     }else{
         setmenu("true");
         setMobMenu("mob-true");
         mobBtn.classList.add('open');
+        
     }
   }
   return (

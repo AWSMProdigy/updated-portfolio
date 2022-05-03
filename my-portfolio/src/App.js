@@ -16,13 +16,8 @@ function App() {
       mouse.style.clipPath = `circle(100%)`;
     }
 
-    const decryptWord = (wordArray) =>{
-
-    }
-
     imgBox.addEventListener('mousemove', (e) => {
     if(!hovered){
-      console.log("Hovered");
       window.setTimeout(lightPortrait, 3000);
       hovered = true;
     }
@@ -35,12 +30,57 @@ function App() {
   })
   const [menu, setmenu] = useState("false");
   const [mobMenu, setMobMenu] = useState("mob-false");
+
+  const decryptHelper = (wordArray, characters) =>{
+    let charactersLength = characters.length;
+    for(let i = 0; i < wordArray.length; i++){
+      let word = wordArray[i].innerHTML.split('');
+      word[Math.floor(Math.random() * word.length)] = characters[Math.floor(Math.random() * charactersLength)]
+      wordArray[i].innerHTML = word.join('');
+    }
+    console.log("Decryption finished");
+  }
+
+  const finishDecryptHelper = (wordArray, originalValues) => {
+    for(let i = 0; i < wordArray.length; i++){
+      let word = wordArray[i].innerHTML.split('');
+      word[i] = originalValues[i].innerHTML[i]
+    }
+  }
+
+  const finishDecrypt = (wordArray, originalValues) => {
+    let fCount = 0;
+    for(let i = 0; i < wordArray.length; i++){
+      fCount += wordArray.innerHTML.length;
+    }
+    const finishDecryptInterval = window.setInterval(function(){
+      finishDecryptHelper(wordArray, originalValues);
+      fCount--;
+      if(fCount === 0){
+        window.clearInterval(finishDecryptInterval);
+      }
+    }, 50);
+  }
+
+  const decryptWord = (wordArray) =>{
+    let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    let originalValues = wordArray;
+    console.log(originalValues);
+    let count = 0;
+    const decryptInterval = setInterval(function() {
+      decryptHelper(wordArray, characters);
+      count++;
+      if(count > 50){
+        clearInterval(decryptInterval);
+        finishDecrypt(wordArray, originalValues);
+      }
+    }, 50);
+  }
   
   const showmenu = () =>{
     const mobBtn = document.querySelector('.mob-btn');
-    const menuItem = document.querySelector('.nav-links');
+    let menuItem = document.querySelector('.nav-links');
     const mobMenuItem = document.querySelector('.nav-links-mobile');
-    console.log(menuItem.children);
 
     // Close menu
     if(menu === "true"){
@@ -53,7 +93,7 @@ function App() {
         setmenu("true");
         setMobMenu("mob-true");
         mobBtn.classList.add('open');
-        
+        decryptWord(menuItem.children);
     }
   }
   return (

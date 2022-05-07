@@ -38,20 +38,25 @@ function App() {
       word[Math.floor(Math.random() * word.length)] = characters[Math.floor(Math.random() * charactersLength)]
       wordArray[i].innerHTML = word.join('');
     }
-    console.log("Decryption finished");
   }
 
   const finishDecryptHelper = (wordArray, originalValues) => {
     for(let i = 0; i < wordArray.length; i++){
       let word = wordArray[i].innerHTML.split('');
-      word[i] = originalValues[i].innerHTML[i]
+      for(let j = 0; j < word.length; j++){
+        if(word[j] !== originalValues[i][j]){
+          word[j] = originalValues[i][j];
+          break;
+        }
+      }
+      wordArray[i].innerHTML = word.join('');
     }
   }
 
   const finishDecrypt = (wordArray, originalValues) => {
     let fCount = 0;
     for(let i = 0; i < wordArray.length; i++){
-      fCount += wordArray.innerHTML.length;
+      fCount += wordArray[i].innerHTML.length;
     }
     const finishDecryptInterval = window.setInterval(function(){
       finishDecryptHelper(wordArray, originalValues);
@@ -62,10 +67,8 @@ function App() {
     }, 50);
   }
 
-  const decryptWord = (wordArray) =>{
+  const decryptWord = (wordArray, originalValues) =>{
     let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    let originalValues = wordArray;
-    console.log(originalValues);
     let count = 0;
     const decryptInterval = setInterval(function() {
       decryptHelper(wordArray, characters);
@@ -74,7 +77,7 @@ function App() {
         clearInterval(decryptInterval);
         finishDecrypt(wordArray, originalValues);
       }
-    }, 50);
+    }, 10);
   }
   
   const showmenu = () =>{
@@ -93,7 +96,9 @@ function App() {
         setmenu("true");
         setMobMenu("mob-true");
         mobBtn.classList.add('open');
-        decryptWord(menuItem.children);
+        console.log(menuItem.children);
+        let originalValues = ["About", "Projects", "Skills", "Contact"]
+        decryptWord(menuItem.children, originalValues);
     }
   }
   return (

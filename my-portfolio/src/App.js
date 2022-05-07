@@ -28,14 +28,20 @@ function App() {
       `circle(10em at ${e.offsetX}px ${e.offsetY}px)`;
   });
 
-  document.getElementById("pageContainer").addEventListener('scroll', function(e){
+  const scrollDecrypt = () =>{
     let element = document.getElementById("secondTitle");
     let bodyRect = document.body.getBoundingClientRect(),
         elemRect = element.getBoundingClientRect(),
         offset   = elemRect.top - bodyRect.top;
-    console.log(bodyRect);
-    console.log(elemRect);
-  }, false)
+    console.log(offset)
+    if(offset < 600){
+      document.getElementById("pageContainer").removeEventListener('scroll', scrollDecrypt);
+      let originalValue = ["I told you I'd find you"];
+      decryptWord([element], originalValue);
+    }
+  }
+
+  document.getElementById("pageContainer").addEventListener('scroll', scrollDecrypt, false);
   })
 
   

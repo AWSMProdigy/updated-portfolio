@@ -27,7 +27,18 @@ function App() {
     mouse.style.clipPath = 
       `circle(10em at ${e.offsetX}px ${e.offsetY}px)`;
   });
+
+  document.getElementById("pageContainer").addEventListener('scroll', function(e){
+    let element = document.getElementById("secondTitle");
+    let bodyRect = document.body.getBoundingClientRect(),
+        elemRect = element.getBoundingClientRect(),
+        offset   = elemRect.top - bodyRect.top;
+    console.log(bodyRect);
+    console.log(elemRect);
+  }, false)
   })
+
+  
   const [menu, setmenu] = useState("false");
   const [mobMenu, setMobMenu] = useState("mob-false");
 
@@ -125,7 +136,7 @@ function App() {
           <a href="#Skills" id="skillsLink"><h1>Skills</h1></a>
           <a href="#Contact" id="contactLink"><h1>Contact</h1></a>
         </div>
-        <div className='pages'>
+        <div className='pages' id="pageContainer">
         <div className="Page About" id="About">
           <h1>Introduce yourself Mr...</h1>
           <h2>Sousa...</h2>
@@ -138,7 +149,7 @@ function App() {
           <h3>With college, bootcamp, and real world experience, I aim to please</h3>
         </div>
         <div className="Page Projects" id="Projects">
-          <h1>I told you I'd find you</h1>
+          <h1 id="secondTitle">I told you I'd find you</h1>
         </div>
         <div className="Page Skills" id="Skills">
           <h1>I have a particular set of skills...</h1>

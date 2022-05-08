@@ -172,6 +172,19 @@ nav{
 
 .aboutSection{
   display: flex;
+  flex-direction: column;
+}
+
+.projectRow{
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project{
+  width: 45%;
+  text-align: center;
 }
 
 .Projects{

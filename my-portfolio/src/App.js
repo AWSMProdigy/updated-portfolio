@@ -41,7 +41,7 @@ function App() {
     }
   }
 
-  document.getElementById("pageContainer").addEventListener('scroll', scrollDecrypt, false);
+  // document.getElementById("pageContainer").addEventListener('scroll', scrollDecrypt, false);
   })
 
   
@@ -181,19 +181,27 @@ function App() {
           <h1 id="projectsTitle">Why did you do it?</h1>
           <div className='projectRow'>
             <div className='project'>
-
+              <h1>Dangerous to Go Alone</h1>
+              <img alt="Dangerous To Go Alone"></img>
+              <p>Gamers deserve a place to find like-minded individual. No gamer should be without other gamers. After all...it's dangerous to go alone</p>
             </div>
             <div className='project'>
-
+              <h1>Reel Cinema</h1>
+              <img alt="Reel Cinema"></img>
+              <p>The cinema experience is meant to be one of joy, and the unsung heroes of development need to make sure that's reflected in a website</p>
             </div>
           </div>
           <div className='projectRow'>
-          <div className='project'>
-
-          </div>
-          <div className='project'>
-
-          </div>
+            <div className='project'>
+              <h1>The Daily Felon</h1>
+              <img alt="The Daily Felon"></img>
+              <p>The good people deserved a good laugh. Sometimes that laugh needs to be a bit more fantastical than others.</p>
+            </div>
+            <div className='project'>
+              <h1>Twitter Monitor</h1>
+              <img alt="Twitter Monitor"></img>
+              <p>A good agent has good connections everywhere, and sometimes, you need to keep tabs</p>
+            </div>
           </div>
         </div>
         <div className="Page Contact" id="Contact">

@@ -182,24 +182,24 @@ function App() {
           <div className='projectRow'>
             <div className='project'>
               <h1>Dangerous to Go Alone</h1>
-              <img alt="Dangerous To Go Alone"></img>
+              <img alt="Dangerous To Go Alone" src={require('./images/Dangerous.JPG')}></img>
               <p>Gamers deserve a place to find like-minded individual. No gamer should be without other gamers. After all...it's dangerous to go alone</p>
             </div>
             <div className='project'>
               <h1>Reel Cinema</h1>
-              <img alt="Reel Cinema"></img>
+              <img alt="Reel Cinema" src={require('./images/reelCinema.png')}></img>
               <p>The cinema experience is meant to be one of joy, and the unsung heroes of development need to make sure that's reflected in a website</p>
             </div>
           </div>
           <div className='projectRow'>
             <div className='project'>
               <h1>The Daily Felon</h1>
-              <img alt="The Daily Felon"></img>
+              <img alt="The Daily Felon" src={require('./images/Beau.JPG')}></img>
               <p>The good people deserved a good laugh. Sometimes that laugh needs to be a bit more fantastical than others.</p>
             </div>
             <div className='project'>
               <h1>Twitter Monitor</h1>
-              <img alt="Twitter Monitor"></img>
+              <img alt="Twitter Monitor" src={require('./images/Twitter.JPG')}></img>
               <p>A good agent has good connections everywhere, and sometimes, you need to keep tabs</p>
             </div>
           </div>

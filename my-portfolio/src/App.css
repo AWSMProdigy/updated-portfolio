@@ -5,6 +5,7 @@
 
 body {
   background: #272727;
+  color: white;
 }
 
 .pages{
@@ -156,16 +157,29 @@ nav{
   flex-direction: column;
 }
 
-.About{
+.Intro{
   color: white;
 }
 
+.About{
+
+}
+
+.aboutPara{
+  display: block;
+  text-align: center;
+}
+
+.aboutSection{
+  display: flex;
+}
+
 .Projects{
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .Skills{
-  background-color: green;
+  /* background-color: green; */
 }
 
 .Contact{

@@ -29,12 +29,12 @@ function App() {
   });
 
   const scrollDecrypt = () =>{
-    let element = document.getElementById("secondTitle");
-    let bodyRect = document.body.getBoundingClientRect(),
-        elemRect = element.getBoundingClientRect(),
-        offset   = elemRect.top - bodyRect.top;
-    console.log(offset)
-    if(offset < 600){
+    let element = document.getElementById("secondTitle"),
+        elemRect = element.getBoundingClientRect();
+    if(elemRect.top >= 0 &&
+      elemRect.left >= 0 &&
+      elemRect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      elemRect.right <= (window.innerWidth || document.documentElement.clientWidth)){
       document.getElementById("pageContainer").removeEventListener('scroll', scrollDecrypt);
       let originalValue = ["I told you I'd find you"];
       decryptWord([element], originalValue);
@@ -81,7 +81,7 @@ function App() {
       if(fCount === 0){
         window.clearInterval(finishDecryptInterval);
       }
-    }, 50);
+    }, 60);
   }
 
   const decryptWord = (wordArray, originalValues) =>{
@@ -114,7 +114,7 @@ function App() {
         setMobMenu("mob-true");
         mobBtn.classList.add('open');
         console.log(menuItem.children);
-        let originalValues = ["About", "Projects", "Skills", "Contact"]
+        let originalValues = ["Introduction", "About", "Projects", "Skills", "Contact"]
         decryptWord(menuItem.children, originalValues);
     }
   }
@@ -126,6 +126,7 @@ function App() {
         </div>
         <div className="right">
           <ul className={"nav-links " + menu}>
+            <a href="#Intro">Introduction</a>
             <a href="#About">About</a>
             <a href="#Projects">Projects</a>
             <a href="#Skills">Skills</a>
@@ -137,13 +138,14 @@ function App() {
         </div>
         </nav>
         <div className={"nav-links-mobile " + mobMenu} onClick={showmenu}>
+          <a href="#Intro" id="introLink"><h1>Introduction</h1></a>
           <a href="#About" id="aboutLink"><h1>About</h1></a>
           <a href="#Projects" id="projectLink"><h1>Projects</h1></a>
           <a href="#Skills" id="skillsLink"><h1>Skills</h1></a>
           <a href="#Contact" id="contactLink"><h1>Contact</h1></a>
         </div>
         <div className='pages' id="pageContainer">
-        <div className="Page About" id="About">
+        <div className="Page Intro" id="Intro">
           <h1>Introduce yourself Mr...</h1>
           <h2>Sousa...</h2>
           <div className='imgBox'>
@@ -152,13 +154,47 @@ function App() {
           </div>
           <h1>Kyle Sousa</h1>
           <h2>A full-stack web developer with an eye for quality and a desire for improvement</h2>
-          <h3>With college, bootcamp, and real world experience, I aim to please</h3>
         </div>
-        <div className="Page Projects" id="Projects">
-          <h1 id="secondTitle">I told you I'd find you</h1>
+        <div className="Page About" id="About">
+          <h1 id="AboutTitle">Tell me about yourself, how did you end up here?</h1>
+          <section className='aboutSection'>
+            <div className='aboutPara'>
+              <p>Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
+              <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
+              <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
+            </div>
+          </section>
         </div>
         <div className="Page Skills" id="Skills">
-          <h1>I have a particular set of skills...</h1>
+          <h1>I have a very particular set of skills...</h1>
+          <h2>Skills that make me a nightmare for any development obstacle...</h2>
+          <ul>
+            <li>ReactJS</li>
+            <li>ReactJS</li>
+            <li>ReactJS</li>
+            <li>ReactJS</li>
+            <li>ReactJS</li>
+            <li>ReactJS</li>
+          </ul>
+        </div>
+        <div className="Page Projects" id="Projects">
+          <h1 id="projectsTitle">Why did you do it?</h1>
+          <div className='projectRow'>
+            <div className='project'>
+
+            </div>
+            <div className='project'>
+
+            </div>
+          </div>
+          <div className='projectRow'>
+          <div className='project'>
+
+          </div>
+          <div className='project'>
+
+          </div>
+          </div>
         </div>
         <div className="Page Contact" id="Contact">
           <h1>Did you leave a calling card?</h1>

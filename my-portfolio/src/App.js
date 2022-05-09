@@ -146,19 +146,23 @@ function App() {
         </div>
         <div className='pages' id="pageContainer">
         <div className="Page Intro" id="Intro">
-          <h1>Introduce yourself Mr...</h1>
-          <h2>Sousa...</h2>
+          <div className="question">
+            <h1>Introduce yourself Mr...</h1>
+          </div>
           <div className='imgBox'>
             <div className="headshot"></div>  
             <div className="mouse"></div>
           </div>
-          <h1>Kyle Sousa</h1>
-          <h2>A full-stack web developer with an eye for quality and a desire for improvement</h2>
+          <div className='answer'>
+            <h2>"Sousa...</h2>
+            <h1>Kyle Sousa</h1>
+            <h2>An ambitious full-stack web developer with the drive to overcome any obstacle on my path to success."</h2>
+          </div>
         </div>
         <div className="Page About" id="About">
-          <h1 id="AboutTitle">Tell me about yourself, how did you end up here?</h1>
+          <h1 id="AboutTitle" className='question'>Tell me about yourself, how did you end up here?</h1>
           <section className='aboutSection'>
-            <div className='aboutPara'>
+            <div className='aboutPara answer'>
               <p>Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
               <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
               <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>

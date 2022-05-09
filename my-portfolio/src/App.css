@@ -191,7 +191,14 @@ nav{
 .project img{
   width: 90%;
   height: 80%;
-  border: w;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+
+.project img:hover{
+  background: rgba(26, 14, 129, 0.2);
+  z-index: 10000;
 }
 
 .Projects{

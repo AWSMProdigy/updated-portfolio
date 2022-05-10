@@ -160,26 +160,31 @@ function App() {
           </div>
         </div>
         <div className="Page About" id="About">
-          <h1 id="AboutTitle" className='question'>Tell me about yourself, how did you end up here?</h1>
-          <section className='aboutSection'>
-            <div className='aboutPara answer'>
-              <p>Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
-              <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
-              <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
-            </div>
+          <div className='question'>
+            <h1>Tell me about yourself, how did you end up here?</h1>
+          </div>
+          <section className='answer'>
+            <p>Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
+            <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
+            <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
+
           </section>
         </div>
         <div className="Page Skills" id="Skills">
-          <h1>I have a very particular set of skills...</h1>
-          <h2>Skills that make me a nightmare for any development obstacle...</h2>
-          <ul>
-            <li>ReactJS</li>
-            <li>ReactJS</li>
-            <li>ReactJS</li>
-            <li>ReactJS</li>
-            <li>ReactJS</li>
-            <li>ReactJS</li>
-          </ul>
+          <div className='question'>
+            <h1>What allows you to accomplish your tasks with such efficiency?</h1>
+          </div>
+          <div className='answer'>
+            <h2>Skills that make me a nightmare for any development obstacle...</h2>
+            <ul>
+              <li>ReactJS</li>
+              <li>ReactJS</li>
+              <li>ReactJS</li>
+              <li>ReactJS</li>
+              <li>ReactJS</li>
+              <li>ReactJS</li>
+            </ul>
+          </div>
         </div>
         <div className="Page Projects" id="Projects">
           <h1 id="projectsTitle">Why did you do it?</h1>

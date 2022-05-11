@@ -96,6 +96,13 @@ function App() {
       }
     }, 10);
   }
+
+  const pageDecrypt = (e) => {
+    let items = [e.target];
+    console.log(e.target.getAttribute("word-data"));
+    let originalValue = [e.target.getAttribute("word-data")[Math.floor(Math.random() * (1-0+1) + 0)]]
+    decryptWord(items, originalValue);
+  }
   
   const showmenu = () =>{
     const mobBtn = document.querySelector('.mob-btn');
@@ -121,7 +128,12 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <div className="left"></div>
+        <div className="left">
+          <div className='nameNav'>
+            <h3>Kyle Sousa</h3>
+            <h5>Full-Stack Web Developer</h5>
+          </div>
+        </div>
         <div className="name">
         </div>
         <div className="right">
@@ -136,97 +148,112 @@ function App() {
             <div className="mob-btn__burger"></div>
           </div>
         </div>
-        </nav>
-        <div className={"nav-links-mobile " + mobMenu} onClick={showmenu}>
-          <a href="#Intro" id="introLink"><h1>Introduction</h1></a>
-          <a href="#About" id="aboutLink"><h1>About</h1></a>
-          <a href="#Projects" id="projectLink"><h1>Projects</h1></a>
-          <a href="#Skills" id="skillsLink"><h1>Skills</h1></a>
-          <a href="#Contact" id="contactLink"><h1>Contact</h1></a>
+      </nav>
+      <div className={"nav-links-mobile " + mobMenu} onClick={showmenu}>
+        <a href="#Intro" id="introLink"><h1>Introduction</h1></a>
+        <a href="#About" id="aboutLink"><h1>About</h1></a>
+        <a href="#Projects" id="projectLink"><h1>Projects</h1></a>
+        <a href="#Skills" id="skillsLink"><h1>Skills</h1></a>
+        <a href="#Contact" id="contactLink"><h1>Contact</h1></a>
+      </div>
+      <div className='pages' id="pageContainer">
+      <div className="Page Intro" id="Intro">
+        <div className='introText'>
+          <h1>Hi, I'm Kyle Sousa,</h1>
+          <h3>a full-stack web developer who loves building efficent and 
+            complex solutions to keep the user experience easy and streamlined.</h3>
+          <h1>I <span onClick={pageDecrypt} word-data={["love", "adore"]}>____</span> what I do</h1>
         </div>
-        <div className='pages' id="pageContainer">
-        <div className="Page Intro" id="Intro">
-          <div className="question">
-            <h1>Introduce yourself Mr...</h1>
+          <div className="introBox">
+            <div className='imgBox'>
+              <div className="headshot"></div>  
+              <div className="mouse"></div>
+            </div>
           </div>
-          <div className='imgBox'>
-            <div className="headshot"></div>  
-            <div className="mouse"></div>
-          </div>
-          <div className='answer'>
-            <h2>"Sousa...</h2>
-            <h1>Kyle Sousa</h1>
-            <h2>An ambitious full-stack web developer with the drive to overcome any obstacle on my path to success."</h2>
-          </div>
+      </div>
+      <div className="Page About" id="About">
+        <div className='question'>
+          <h1>Tell me about yourself, how did you end up here?</h1>
         </div>
-        <div className="Page About" id="About">
-          <div className='question'>
-            <h1>Tell me about yourself, how did you end up here?</h1>
-          </div>
-          <section className='answer'>
-            <p>Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
-            <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
-            <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
+        <section className='answer'>
+          <p>"Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
+          <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
+          <p>I am motivated to fully commit myself to a team and a project and create something that lasts."</p>
 
-          </section>
+        </section>
+      </div>
+      <div className="Page Skills" id="Skills">
+        <div className='question'>
+          <h1>What allows you to accomplish your tasks with such efficiency?</h1>
         </div>
-        <div className="Page Skills" id="Skills">
-          <div className='question'>
-            <h1>What allows you to accomplish your tasks with such efficiency?</h1>
-          </div>
-          <div className='answer'>
-            <h2>Skills that make me a nightmare for any development obstacle...</h2>
-            <ul>
-              <li>ReactJS</li>
-              <li>ReactJS</li>
-              <li>ReactJS</li>
-              <li>ReactJS</li>
-              <li>ReactJS</li>
-              <li>ReactJS</li>
-            </ul>
-          </div>
+        <div className='answer'>
+          <h2>"Skills that make me a nightmare for any development obstacle..."</h2>
+          <ul className='skillList'>
+            <li>ReactJS</li>
+            <li>Python Django</li>
+            <li>NodeJS</li>
+            <li>ExpressJs</li>
+            <li>MongoDB</li>
+            <li>PHP</li>
+            <li>MERN</li>
+            <li>MySQL</li>
+            <li>Git</li>
+            <li>MVC</li>
+            <li>AngularJS</li>
+            <li>HandlebarsJS</li>
+            <li>HTML/CSS</li>
+            <li>GraphQL</li>
+            <li>RESTful API</li>
+            <li>Bootstrap</li>
+            <li>Data structures</li>
+            <li>Office 365</li>
+            <li>Linux shell</li>
+            <li>Javascript</li>
+            <li>Object-Oriented Programming</li>
+          </ul>
         </div>
-        <div className="Page Projects" id="Projects">
-          <h1 id="projectsTitle">Why did you do it?</h1>
-          <div className='projectRow'>
-            <div className='project'>
-              <h1>Dangerous to Go Alone</h1>
-              <img alt="Dangerous To Go Alone" src={require('./images/Dangerous.JPG')}></img>
-              <p>Gamers deserve a place to find like-minded individual. No gamer should be without other gamers. After all...it's dangerous to go alone</p>
-            </div>
-            <div className='project'>
-              <h1>Reel Cinema</h1>
-              <img alt="Reel Cinema" src={require('./images/reelCinema.png')}></img>
-              <p>The cinema experience is meant to be one of joy, and the unsung heroes of development need to make sure that's reflected in a website</p>
-            </div>
+      </div>
+      <div className="Page Projects" id="Projects">
+        <h1 id="projectsTitle">Why did you do it?</h1>
+        <div className='projectRow'>
+          <div className='project'>
+            <h1>Dangerous to Go Alone</h1>
+            <img alt="Dangerous To Go Alone" src={require('./images/Dangerous.JPG')}></img>
+            <p>Gamers deserve a place to find like-minded individual. No gamer should be without other gamers. After all...it's dangerous to go alone</p>
           </div>
-          <div className='projectRow'>
-            <div className='project'>
-              <h1>The Daily Felon</h1>
-              <img alt="The Daily Felon" src={require('./images/Beau.JPG')}></img>
-              <p>The good people deserved a good laugh. Sometimes that laugh needs to be a bit more fantastical than others.</p>
-            </div>
-            <div className='project'>
-              <h1>Twitter Monitor</h1>
-              <img alt="Twitter Monitor" src={require('./images/Twitter.JPG')}></img>
-              <p>A good agent has good connections everywhere, and sometimes, you need to keep tabs</p>
-            </div>
-          </div>
-        </div>
-        <div className="Page Contact" id="Contact">
-          <h1>Did you leave a calling card?</h1>
-          <h1>Always do</h1>
-          <div className="calling-card">
-            <div>
-              <div className="Name">Kyle Sousa</div>
-              <div className="Phone">239-770-0763</div>
-              <div className="Email">Kylesousa756@gmail.com</div>
-              <div className="LinkedIn"></div>
-              <div className="Github"></div>
-            </div>
+          <div className='project'>
+            <h1>Reel Cinema</h1>
+            <img alt="Reel Cinema" src={require('./images/reelCinema.png')}></img>
+            <p>The cinema experience is meant to be one of joy, and the unsung heroes of development need to make sure that's reflected in a website</p>
           </div>
         </div>
+        <div className='projectRow'>
+          <div className='project'>
+            <h1>The Daily Felon</h1>
+            <img alt="The Daily Felon" src={require('./images/Beau.JPG')}></img>
+            <p>The good people deserved a good laugh. Sometimes that laugh needs to be a bit more fantastical than others.</p>
+          </div>
+          <div className='project'>
+            <h1>Twitter Monitor</h1>
+            <img alt="Twitter Monitor" src={require('./images/Twitter.JPG')}></img>
+            <p>A good agent has good connections everywhere, and sometimes, you need to keep tabs</p>
+          </div>
         </div>
+      </div>
+      <div className="Page Contact" id="Contact">
+        <h1>Did you leave a calling card?</h1>
+        <h1>Always do</h1>
+        <div className="calling-card">
+          <div>
+            <div className="Name">Kyle Sousa</div>
+            <div className="Phone">239-770-0763</div>
+            <div className="Email">Kylesousa756@gmail.com</div>
+            <div className="LinkedIn"></div>
+            <div className="Github"></div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   );
 }

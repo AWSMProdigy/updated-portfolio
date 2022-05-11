@@ -18,6 +18,10 @@ body {
   width: 100vw;
 }
 
+.nameNav{
+  z-index: 10001;
+}
+
 .mob-btn {
   z-index: 999;
   position: relative;
@@ -152,14 +156,23 @@ nav{
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  
 }
 
 .Intro{
-  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.introText{
+  width: 40%;
+  word-wrap: normal;
+}
+
+.introBox{
+  text-align: center;
 }
 
 .question{
@@ -167,6 +180,7 @@ nav{
   justify-content: start;
   width: 95%;
   font-style: italic;
+  margin: 70px 0px auto 20px;  
 }
 
 .answer{
@@ -174,6 +188,7 @@ nav{
   flex-direction: column;
   align-items: flex-end;
   width: 95%;
+  margin: auto 20px 70px auto;
 }
 
 .About{
@@ -213,7 +228,6 @@ nav{
 
 .project img:hover{
   background: rgba(26, 14, 129, 0.2);
-  z-index: 10000;
 }
 
 .Projects{
@@ -222,6 +236,16 @@ nav{
 
 .Skills{
   /* background-color: green; */
+}
+
+.skillList{
+  list-style: none;
+}
+
+.skillList > li {
+  display: inline-block;
+  background: blue;
+  margin: 5px;
 }
 
 .Contact{
@@ -234,6 +258,7 @@ nav{
   width: 400px;
   height: 400px;
   cursor: none;
+  border: solid 20px rgb(27, 27, 27);
 }
 
 .headshot, .mouse {

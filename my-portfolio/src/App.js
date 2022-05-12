@@ -60,8 +60,13 @@ function App() {
   const finishDecryptHelper = (wordArray, originalValues) => {
     for(let i = 0; i < wordArray.length; i++){
       let word = wordArray[i].innerHTML.split('');
-      for(let j = 0; j < word.length; j++){
-        if(word[j] !== originalValues[i][j]){
+      for(let j = 0; j < originalValues[i].length; j++){
+        console.log(j);
+        if(word[j] === undefined){
+          console.log("undefined reached");
+          word += originalValues[i][j];
+        }
+        else if(word[j] !== originalValues[i][j]){
           word[j] = originalValues[i][j];
           break;
         }
@@ -97,11 +102,50 @@ function App() {
     }, 10);
   }
 
+  const pageDecryptHelper = (element) =>{
+    let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    let word = element.innerHTML.split('');
+    word[Math.floor(Math.random() * word.length)] = characters[Math.floor(Math.random() * characters.length)]
+    element.innerHTML = word.join('');
+  }
+
+   const finishPageHelper = (element, originalValue) => {
+    let word = element.innerHTML.split('');
+    for(let i = 0; i < originalValue.length; i++){
+      if(!word[i]){
+        word.push(originalValue[i]);
+        break;
+      }
+      if(word[i]!==originalValue[i]){
+        word[i] = originalValue[i];
+        break;
+      }
+    }
+    element.innerHTML = word.join('');
+   }
+  
+
   const pageDecrypt = (e) => {
     let items = [e.target];
-    console.log(e.target.getAttribute("word-data"));
-    let originalValue = [e.target.getAttribute("word-data")[Math.floor(Math.random() * (1-0+1) + 0)]]
-    decryptWord(items, originalValue);
+    let myElement = e.target;
+    let newArray = e.target.getAttribute("word-data").split(',');
+    let originalValue = newArray[Math.floor(Math.random() * (1-0+1) + 0)]
+    let count = e.target.innerHTML.length;
+    const decryptInterval = setInterval(function(){
+      count--;
+      pageDecryptHelper(myElement);
+      if(count === 0){
+        clearInterval(decryptInterval);
+      }
+    }, 10);
+    count = originalValue.length;
+    const finishInterval = setInterval(function(){
+      count--;
+      finishPageHelper(myElement, originalValue);
+      if(count === 0){
+        clearInterval(finishInterval)
+      }
+    })
   }
   
   const showmenu = () =>{

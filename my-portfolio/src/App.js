@@ -63,7 +63,6 @@ function App() {
       for(let j = 0; j < originalValues[i].length; j++){
         console.log(j);
         if(word[j] === undefined){
-          console.log("undefined reached");
           word += originalValues[i][j];
         }
         else if(word[j] !== originalValues[i][j]){
@@ -111,41 +110,54 @@ function App() {
 
    const finishPageHelper = (element, originalValue) => {
     let word = element.innerHTML.split('');
-    for(let i = 0; i < originalValue.length; i++){
-      if(!word[i]){
+    for(let i = 0; i < Math.max(originalValue.length, word.length); i++){
+      console.log(i);
+      if(!originalValue[i]){
+        console.log("Popping");
+        word.pop();
+        break;
+      }
+      else if(!word[i]){
         word.push(originalValue[i]);
         break;
       }
-      if(word[i]!==originalValue[i]){
+      else if(word[i]!==originalValue[i]){
         word[i] = originalValue[i];
         break;
       }
     }
     element.innerHTML = word.join('');
    }
+
+   const finishPageInterval = (element, originalValue) =>{
+    let count = Math.max(originalValue.length, element.innerHTML.length);
+    const finishInterval = setInterval(function(){
+      count--;
+      finishPageHelper(element, originalValue);
+      if(count === 0){
+        clearInterval(finishInterval)
+      }
+    }, 60);
+   }
   
 
   const pageDecrypt = (e) => {
-    let items = [e.target];
     let myElement = e.target;
-    let newArray = e.target.getAttribute("word-data").split(',');
-    let originalValue = newArray[Math.floor(Math.random() * (1-0+1) + 0)]
+    let newArray = (e.target.getAttribute("word-data").split(','));
+    let index = newArray.indexOf(e.target.innerHTML);
+    if(index > -1){
+      newArray.splice(index, 1);
+    }
+    let originalValue = newArray[Math.floor(Math.random() * ((newArray.length - 1)-0+(newArray.length - 1)) + 0)]
     let count = e.target.innerHTML.length;
     const decryptInterval = setInterval(function(){
       count--;
       pageDecryptHelper(myElement);
       if(count === 0){
         clearInterval(decryptInterval);
+        finishPageInterval(myElement, originalValue)
       }
     }, 10);
-    count = originalValue.length;
-    const finishInterval = setInterval(function(){
-      count--;
-      finishPageHelper(myElement, originalValue);
-      if(count === 0){
-        clearInterval(finishInterval)
-      }
-    })
   }
   
   const showmenu = () =>{
@@ -164,7 +176,6 @@ function App() {
         setmenu("true");
         setMobMenu("mob-true");
         mobBtn.classList.add('open');
-        console.log(menuItem.children);
         let originalValues = ["Introduction", "About", "Projects", "Skills", "Contact"]
         decryptWord(menuItem.children, originalValues);
     }
@@ -206,7 +217,7 @@ function App() {
           <h1>Hi, I'm Kyle Sousa,</h1>
           <h3>a full-stack web developer who loves building efficent and 
             complex solutions to keep the user experience easy and streamlined.</h3>
-          <h1>I <span onClick={pageDecrypt} word-data={["love", "adore"]}>____</span> what I do</h1>
+          <h1>I <span className='encryptWord' onClick={pageDecrypt} word-data={["love", "adore"]}>____</span> what I do</h1>
         </div>
           <div className="introBox">
             <div className='imgBox'>

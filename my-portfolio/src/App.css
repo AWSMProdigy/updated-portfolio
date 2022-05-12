@@ -147,9 +147,6 @@ nav{
   margin: 10px
 }
 
-/* .true{
-  display: flex;
-} */
 
 .mob-false, .mob-true{
   display: none;
@@ -167,6 +164,7 @@ nav{
   font-size: 250%;
   margin-right: auto;
   margin-left: 50px;
+  margin-bottom: 50px;
 }
 
 
@@ -213,11 +211,8 @@ nav{
   cursor: pointer;
 }
 
-.About{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
+.margins{
+  padding: 100px 50px 100px 50px;
 }
 
 .pageText{
@@ -272,10 +267,12 @@ nav{
 }
 
 .Skills{
+ 
+}
+
+.skillFlex{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .skillList{

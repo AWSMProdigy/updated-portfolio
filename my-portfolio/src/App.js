@@ -230,30 +230,34 @@ function App() {
       </div>
 
       <div className="Page About" id="About">
-        <div className='pageTitle'>
-          <h1>My Story:</h1>
-        </div>
-        <div className='pageText'>
-          <div>
-            <p>Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
-            <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
-            <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
-            <p>On a more personal note, I'm very passionate about video games(I could give you a discertation on any video game subject if you gave me enough time), and this led me to my interest in computers</p>
-            <p>I built my first computer back when I was 14, and I began to learn to code soon after.</p>
+        <div className='margins'>
+          <div className='pageTitle'>
+            <h1>My Story:</h1>
           </div>
-          <img className='sidePic' alt="First computer" src={require('./images/me.jpg')}></img>
+          <div className='pageText'>
+            <div>
+              <p>Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
+              <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
+              <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
+              <p>On a more personal note, I'm very passionate about video games(I could give you a discertation on any video game subject if you gave me enough time), and this led me to my interest in computers</p>
+              <p>I built my first computer back when I was 14, and I began to learn to code soon after.</p>
+            </div>
+            <img className='sidePic' alt="First computer" src={require('./images/me.jpg')}></img>
+          </div>
         </div>
       </div>
 
       <div className="Page Skills" id="Skills">
-        <div className='pageTitle'>
-          <h1>Skills</h1>
-        </div>
-        <div>
+        <div className='margins'>
+          <div className='pageTitle'>
+            <h1>Skills</h1>
+          </div>
           <div className='pageText'>
-            <p>I have acquired my skills and coding prowess from years of exploration as well as college experience. My time at
-              at a bootcamp bolstered my confidence and skills and specialized me for web development.
-            </p>
+            <div>
+              <p>I have acquired my skills and coding prowess from years of exploration as well as college experience. My time at
+                at a bootcamp bolstered my confidence and skills and specialized me for web development.</p>
+              <p>Please, take a look at what I can do:</p>
+            </div>
             <ul className='skillList'>
               <li>ReactJS</li>
               <li>Python Django</li>

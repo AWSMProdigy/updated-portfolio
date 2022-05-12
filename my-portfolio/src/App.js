@@ -211,10 +211,12 @@ function App() {
         <a href="#Skills" id="skillsLink"><h1>Skills</h1></a>
         <a href="#Contact" id="contactLink"><h1>Contact</h1></a>
       </div>
+
       <div className='pages' id="pageContainer">
+
       <div className="Page Intro" id="Intro">
         <div className='introText'>
-          <h1>Hi, I'm Kyle Sousa,</h1>
+          <h1 className='nameTitle'>Hi, I'm Kyle Sousa,</h1>
           <h3>a full-stack web developer who loves building efficent and 
             complex solutions to keep the user experience easy and streamlined.</h3>
           <h1>I <span className='encryptWord' onClick={pageDecrypt} word-data={["love", "adore"]}>____</span> what I do</h1>
@@ -226,50 +228,61 @@ function App() {
             </div>
           </div>
       </div>
-      <div className="Page About" id="About">
-        <div className='question'>
-          <h1>Tell me about yourself, how did you end up here?</h1>
-        </div>
-        <section className='answer'>
-          <p>"Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
-          <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
-          <p>I am motivated to fully commit myself to a team and a project and create something that lasts."</p>
 
-        </section>
+      <div className="Page About" id="About">
+        <div className='pageTitle'>
+          <h1>My Story:</h1>
+        </div>
+        <div className='pageText'>
+          <div>
+            <p>Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
+            <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
+            <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
+            <p>On a more personal note, I'm very passionate about video games(I could give you a discertation on any video game subject if you gave me enough time), and this led me to my interest in computers</p>
+            <p>I built my first computer back when I was 14, and I began to learn to code soon after.</p>
+          </div>
+          <img className='sidePic' alt="First computer" src={require('./images/me.jpg')}></img>
+        </div>
       </div>
+
       <div className="Page Skills" id="Skills">
-        <div className='question'>
-          <h1>What allows you to accomplish your tasks with such efficiency?</h1>
+        <div className='pageTitle'>
+          <h1>Skills</h1>
         </div>
-        <div className='answer'>
-          <h2>"Skills that make me a nightmare for any development obstacle..."</h2>
-          <ul className='skillList'>
-            <li>ReactJS</li>
-            <li>Python Django</li>
-            <li>NodeJS</li>
-            <li>ExpressJs</li>
-            <li>MongoDB</li>
-            <li>PHP</li>
-            <li>MERN</li>
-            <li>MySQL</li>
-            <li>Git</li>
-            <li>MVC</li>
-            <li>AngularJS</li>
-            <li>HandlebarsJS</li>
-            <li>HTML/CSS</li>
-            <li>GraphQL</li>
-            <li>RESTful API</li>
-            <li>Bootstrap</li>
-            <li>Data structures</li>
-            <li>Office 365</li>
-            <li>Linux shell</li>
-            <li>Javascript</li>
-            <li>Object-Oriented Programming</li>
-          </ul>
+        <div>
+          <div className='pageText'>
+            <p>I have acquired my skills and coding prowess from years of exploration as well as college experience. My time at
+              at a bootcamp bolstered my confidence and skills and specialized me for web development.
+            </p>
+            <ul className='skillList'>
+              <li>ReactJS</li>
+              <li>Python Django</li>
+              <li>NodeJS</li>
+              <li>ExpressJs</li>
+              <li>MongoDB</li>
+              <li>PHP</li>
+              <li>MERN</li>
+              <li>MySQL</li>
+              <li>Git</li>
+              <li>MVC</li>
+              <li>AngularJS</li>
+              <li>HandlebarsJS</li>
+              <li>HTML/CSS</li>
+              <li>GraphQL</li>
+              <li>RESTful API</li>
+              <li>Bootstrap</li>
+              <li>Data structures</li>
+              <li>Office 365</li>
+              <li>Linux shell</li>
+              <li>Javascript</li>
+              <li>Object-Oriented Programming</li>
+            </ul>
+          </div>
         </div>
       </div>
+
       <div className="Page Projects" id="Projects">
-        <h1 id="projectsTitle">Why did you do it?</h1>
+        <h1 id="projectsTitle">My Work</h1>
         <div className='projectRow'>
           <div className='project'>
             <h1>Dangerous to Go Alone</h1>
@@ -296,8 +309,6 @@ function App() {
         </div>
       </div>
       <div className="Page Contact" id="Contact">
-        <h1>Did you leave a calling card?</h1>
-        <h1>Always do</h1>
         <div className="calling-card">
           <div>
             <div className="Name">Kyle Sousa</div>

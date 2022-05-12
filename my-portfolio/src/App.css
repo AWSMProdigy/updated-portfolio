@@ -8,6 +8,10 @@ body {
   color: white;
 }
 
+.invis{
+  visibility: hidden;
+}
+
 .pages{
   position: absolute;
   top: 0;
@@ -156,8 +160,15 @@ nav{
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
-  
 }
+
+.pageTitle{
+  width: fit-content;
+  font-size: 250%;
+  margin-right: auto;
+  margin-left: 50px;
+}
+
 
 .Intro{
   display: flex;
@@ -169,6 +180,11 @@ nav{
 .introText{
   width: 40%;
   word-wrap: normal;
+}
+
+.nameTitle{
+  font-size: 300%;
+  margin-bottom: 20px;
 }
 
 .introBox{
@@ -193,17 +209,32 @@ nav{
 
 .encryptWord{
   text-decoration: underline;
-  color: red;
+  color: blue;
   cursor: pointer;
 }
 
 .About{
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
-.aboutPara{
-  display: block;
-  text-align: center;
+.pageText{
+  display: flex;
+  flex-direction: row;
+  line-height: 35px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.skillText{
+  margin-left: 50px;
+}
+
+.sidePic{
+  width: 400px;
+  height: 400px;
 }
 
 .aboutSection{
@@ -241,7 +272,10 @@ nav{
 }
 
 .Skills{
-  /* background-color: green; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 .skillList{

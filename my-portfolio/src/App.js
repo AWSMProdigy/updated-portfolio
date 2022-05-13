@@ -235,7 +235,7 @@ function App() {
             <h1>My Story:</h1>
           </div>
           <div className='pageText'>
-            <div>
+            <div className='pageTextCenter'>
               <p>Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
               <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
               <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
@@ -253,34 +253,55 @@ function App() {
             <h1>Skills</h1>
           </div>
           <div className='pageText'>
-            <div>
+            <div className='pageTextCenter'>
               <p>I have acquired my skills and coding prowess from years of exploration as well as college experience. My time at
                 at a bootcamp bolstered my confidence and skills and specialized me for web development.</p>
               <p>Please, take a look at what I can do:</p>
             </div>
-            <ul className='skillList'>
-              <li>ReactJS</li>
-              <li>Python Django</li>
-              <li>NodeJS</li>
-              <li>ExpressJs</li>
-              <li>MongoDB</li>
-              <li>PHP</li>
-              <li>MERN</li>
-              <li>MySQL</li>
-              <li>Git</li>
-              <li>MVC</li>
-              <li>AngularJS</li>
-              <li>HandlebarsJS</li>
-              <li>HTML/CSS</li>
-              <li>GraphQL</li>
-              <li>RESTful API</li>
-              <li>Bootstrap</li>
-              <li>Data structures</li>
-              <li>Office 365</li>
-              <li>Linux shell</li>
-              <li>Javascript</li>
-              <li>Object-Oriented Programming</li>
-            </ul>
+            <div className='skillList'>
+              <div>
+                <h2>Languages:</h2>
+                <div>
+                  <li>Python</li>
+                  <li>C++</li>
+                  <li>Javascript</li>
+                  <li>GO</li>
+                  <li>PHP</li>
+                  <li>GraphQL</li>
+                  <li>HTML/CSS</li>
+                </div>    
+              </div>
+              <div>
+                <h2>Frameworks:</h2>
+                <div>
+                  <li>ReactJS</li>
+                  <li>Python Django</li>
+                  <li>ExpressJs</li>
+                  <li>AngularJS</li>
+                  <li>HandlebarsJS</li>
+                  <li>NodeJS</li>
+                  <li>Bootstrap</li>
+                </div>
+              </div>
+              <div>
+                <h2>Databases:</h2>
+                <div>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                </div>   
+              </div>
+              <div>
+                <h2>Miscellanious:</h2>
+                <div>
+                  <li>Git</li>
+                  <li>RESTful API</li>
+                  <li>Data structures</li>
+                  <li>Office 365</li>
+                  <li>Linux shell</li>
+                  <li>Object-Oriented Programming</li>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

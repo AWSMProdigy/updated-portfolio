@@ -223,6 +223,11 @@ nav{
   margin-right: 50px;
 }
 
+.pageTextCenter{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .skillText{
   margin-left: 50px;
 }
@@ -270,17 +275,12 @@ nav{
  
 }
 
-.skillFlex{
-  display: flex;
-  flex-direction: row;
-}
-
 .skillList{
   list-style: none;
 }
 
-.skillList > li {
-  display: inline-block;
+.skillList li {
+  display: inline;
   background: blue;
   margin: 5px;
 }

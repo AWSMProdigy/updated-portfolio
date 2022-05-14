@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+p a{
+  color:rgb(29, 68, 126);
+  font-style: italic;
+}
+
 body {
   background: #272727;
   color: white;
@@ -226,6 +231,7 @@ nav{
 .pageTextCenter{
   margin-top: auto;
   margin-bottom: auto;
+  margin-right: 50px;
 }
 
 .skillText{
@@ -255,6 +261,21 @@ nav{
   text-align: center;
 }
 
+.bigProject{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bigProject img {
+  height: 300px;
+  width: 533px;
+}
+
+.bigImage{
+  
+}
+
 .project img{
   width: 90%;
   height: 80%;
@@ -279,10 +300,18 @@ nav{
   list-style: none;
 }
 
-.skillList li {
-  display: inline;
-  background: blue;
+.skillList li{
+  cursor: pointer;
+  transition: all .2s ease-out;
+  display: inline-block;
+  background: rgb(29, 68, 126);
   margin: 5px;
+  border-radius: 10%;
+  padding: 2px;
+}
+
+.skillList li:hover{
+  font-size: 120%;
 }
 
 .Contact{

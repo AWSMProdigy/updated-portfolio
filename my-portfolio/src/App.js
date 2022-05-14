@@ -239,6 +239,7 @@ function App() {
               <p>Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
               <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
               <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
+              <p>My time as a company commander in JROTC taught me the importance of working as a team and respecting the chain of command.</p>
               <p>On a more personal note, I'm very passionate about video games(I could give you a discertation on any video game subject if you gave me enough time), and this led me to my interest in computers</p>
               <p>I built my first computer back when I was 14, and I began to learn to code soon after.</p>
             </div>
@@ -256,6 +257,7 @@ function App() {
             <div className='pageTextCenter'>
               <p>I have acquired my skills and coding prowess from years of exploration as well as college experience. My time at
                 at a bootcamp bolstered my confidence and skills and specialized me for web development.</p>
+              <p>I have experience working on projects as a development team member <a href=''>and a team leader.</a></p>
               <p>Please, take a look at what I can do:</p>
             </div>
             <div className='skillList'>
@@ -307,34 +309,23 @@ function App() {
       </div>
 
       <div className="Page Projects" id="Projects">
-        <h1 id="projectsTitle">My Work</h1>
-        <div className='projectRow'>
-          <div className='project'>
-            <h1>Dangerous to Go Alone</h1>
-            <img alt="Dangerous To Go Alone" src={require('./images/Dangerous.JPG')}></img>
-            <p>Gamers deserve a place to find like-minded individual. No gamer should be without other gamers. After all...it's dangerous to go alone</p>
+        <div className='margins'>
+          <div className='pageTitle'>
+            <h1>My Work</h1>
           </div>
-          <div className='project'>
-            <h1>Reel Cinema</h1>
-            <img alt="Reel Cinema" src={require('./images/reelCinema.png')}></img>
-            <p>The cinema experience is meant to be one of joy, and the unsung heroes of development need to make sure that's reflected in a website</p>
-          </div>
-        </div>
-        <div className='projectRow'>
-          <div className='project'>
-            <h1>The Daily Felon</h1>
-            <img alt="The Daily Felon" src={require('./images/Beau.JPG')}></img>
-            <p>The good people deserved a good laugh. Sometimes that laugh needs to be a bit more fantastical than others.</p>
-          </div>
-          <div className='project'>
-            <h1>Twitter Monitor</h1>
-            <img alt="Twitter Monitor" src={require('./images/Twitter.JPG')}></img>
-            <p>A good agent has good connections everywhere, and sometimes, you need to keep tabs</p>
+          <div className='bigProject'>
+            <div className='bigImage'>
+              <img alt="Dangerous To Go Alone" src={require('./images/Dangerous.JPG')}></img>
+            </div>
+            <div>
+              <p>Dangerous To Go Alone aims to create a hub for gamers to find others with similar mindsets and interests.</p>
+              <p>Uses ReactJS, GraphQL, and MongoDB</p>
+            </div>
           </div>
         </div>
       </div>
       <div className="Page Contact" id="Contact">
-        <div className="calling-card">
+        {/* <div className="calling-card">
           <div>
             <div className="Name">Kyle Sousa</div>
             <div className="Phone">239-770-0763</div>
@@ -342,7 +333,7 @@ function App() {
             <div className="LinkedIn"></div>
             <div className="Github"></div>
           </div>
-        </div>
+        </div> */}
       </div>
       </div>
     </div>

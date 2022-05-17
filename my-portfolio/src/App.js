@@ -322,9 +322,15 @@ function App() {
               <p>Uses ReactJS, GraphQL, and MongoDB</p>
             </div>
           </div>
-          <div className='project'>Reel Cinema</div>
-          <div className='project'>Daily Felon</div>
-          <div className='project'>Twitter Bot</div>
+          <div className='project'>
+            <img alt='Reel Cinema'></img>
+          </div>
+          <div className='project'>
+
+          </div>
+          <div className='project'>
+
+          </div>
         </div>
       </div>
       <div className="Page Contact" id="Contact">

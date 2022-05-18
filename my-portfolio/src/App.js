@@ -212,7 +212,6 @@ function App() {
         <a href="#Contact" id="contactLink"><h1>Contact</h1></a>
       </div>
 
-      <div className='pages' id="pageContainer">
 
       <div className="Page Intro" id="Intro">
         <div className='introText'>
@@ -225,78 +224,74 @@ function App() {
       </div>
 
       <div className="Page About" id="About">
-        <div className='margins'>
-          <div className='pageTitle'>
-            <h1>My Story:</h1>
+        <div className='pageTitle'>
+          <h1>My Story:</h1>
+        </div>
+        <div className='pageText'>
+          <div className='pageTextCenter'>
+            <p>Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
+            <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
+            <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
+            <p>My time as a company commander in JROTC taught me the importance of working as a team and respecting the chain of command.</p>
+            <p>On a more personal note, I'm very passionate about video games(I could give you a discertation on any video game subject if you gave me enough time), and this led me to my interest in computers</p>
+            <p>I built my first computer back when I was 14, and I began to learn to code soon after.</p>
           </div>
-          <div className='pageText'>
-            <div className='pageTextCenter'>
-              <p>Years ago, when I got my first taste of coding, I was hooked. All it took was a "Hello World!", and from there, I couldn't stop. I found myself sharpening my skills and learning new things.</p>
-              <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
-              <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
-              <p>My time as a company commander in JROTC taught me the importance of working as a team and respecting the chain of command.</p>
-              <p>On a more personal note, I'm very passionate about video games(I could give you a discertation on any video game subject if you gave me enough time), and this led me to my interest in computers</p>
-              <p>I built my first computer back when I was 14, and I began to learn to code soon after.</p>
-            </div>
-            {/* <img className='sidePic' alt="First computer" src={require('./images/me.jpg')}></img> */}
-          </div>
+          {/* <img className='sidePic' alt="First computer" src={require('./images/me.jpg')}></img> */}
         </div>
       </div>
 
       <div className="Page Skills" id="Skills">
-        <div className='margins'>
-          <div className='pageTitle'>
-            <h1>Skills</h1>
+        <div className='pageTitle'>
+          <h1>Skills</h1>
+        </div>
+        <div className='pageText'>
+          <div className='pageTextCenter'>
+            <p>I have acquired my skills and coding prowess from years of exploration as well as college experience. My time at
+              at a bootcamp bolstered my confidence and skills and specialized me for web development.</p>
+            <p>I have experience working on projects as a development team member <a href='#Projects'>and a team leader.</a></p>
+            <p>Please, take a look at what I can do:</p>
           </div>
-          <div className='pageText'>
-            <div className='pageTextCenter'>
-              <p>I have acquired my skills and coding prowess from years of exploration as well as college experience. My time at
-                at a bootcamp bolstered my confidence and skills and specialized me for web development.</p>
-              <p>I have experience working on projects as a development team member <a href='#Projects'>and a team leader.</a></p>
-              <p>Please, take a look at what I can do:</p>
+          <div className='skillList'>
+            <div>
+              <h2>Languages:</h2>
+              <div>
+                <li>Python</li>
+                <li>C++</li>
+                <li>Javascript</li>
+                <li>GO</li>
+                <li>PHP</li>
+                <li>GraphQL</li>
+                <li>HTML/CSS</li>
+              </div>    
             </div>
-            <div className='skillList'>
+            <div>
+              <h2>Frameworks:</h2>
               <div>
-                <h2>Languages:</h2>
-                <div>
-                  <li>Python</li>
-                  <li>C++</li>
-                  <li>Javascript</li>
-                  <li>GO</li>
-                  <li>PHP</li>
-                  <li>GraphQL</li>
-                  <li>HTML/CSS</li>
-                </div>    
+                <li>ReactJS</li>
+                <li>Python Django</li>
+                <li>ExpressJs</li>
+                <li>AngularJS</li>
+                <li>HandlebarsJS</li>
+                <li>NodeJS</li>
+                <li>Bootstrap</li>
               </div>
+            </div>
+            <div>
+              <h2>Databases:</h2>
               <div>
-                <h2>Frameworks:</h2>
-                <div>
-                  <li>ReactJS</li>
-                  <li>Python Django</li>
-                  <li>ExpressJs</li>
-                  <li>AngularJS</li>
-                  <li>HandlebarsJS</li>
-                  <li>NodeJS</li>
-                  <li>Bootstrap</li>
-                </div>
-              </div>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+              </div>   
+            </div>
+            <div>
+              <h2>Miscellanious:</h2>
               <div>
-                <h2>Databases:</h2>
-                <div>
-                  <li>MySQL</li>
-                  <li>MongoDB</li>
-                </div>   
-              </div>
-              <div>
-                <h2>Miscellanious:</h2>
-                <div>
-                  <li>Git</li>
-                  <li>RESTful API</li>
-                  <li>Data structures</li>
-                  <li>Office 365</li>
-                  <li>Linux shell</li>
-                  <li>Object-Oriented Programming</li>
-                </div>
+                <li>Git</li>
+                <li>RESTful API</li>
+                <li>Data structures</li>
+                <li>Office 365</li>
+                <li>Linux shell</li>
+                <li>Object-Oriented Programming</li>
               </div>
             </div>
           </div>
@@ -335,7 +330,6 @@ function App() {
         
       </div>
       </div>
-    </div>
   );
 }
 

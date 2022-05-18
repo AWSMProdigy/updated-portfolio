@@ -405,4 +405,9 @@ nav{
   .Intro{
     flex-direction: column;
   }
+
+  .introText{
+    width: 80%;
+    text-align: center;
+  }
 }

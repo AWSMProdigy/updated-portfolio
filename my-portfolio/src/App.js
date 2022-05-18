@@ -217,16 +217,11 @@ function App() {
       <div className="Page Intro" id="Intro">
         <div className='introText'>
           <h1 className='nameTitle'>Hi, I'm Kyle Sousa,</h1>
-          <h3>a full-stack web developer who loves building efficent and 
-            complex solutions to keep the user experience easy and streamlined.</h3>
+          <h2>A full-stack web developer</h2>
+          <h3>who loves building efficent and complex solutions to keep the user experience easy and streamlined.</h3>
           <h1>I <span className='encryptWord' onClick={pageDecrypt} word-data={["love", "adore"]}>____</span> what I do</h1>
         </div>
-          <div className="introBox">
-            <div className='imgBox'>
-              <div className="headshot"></div>  
-              <div className="mouse"></div>
-            </div>
-          </div>
+        <img className="imgBox" src={require('./images/me.jpg')}></img>
       </div>
 
       <div className="Page About" id="About">
@@ -243,7 +238,7 @@ function App() {
               <p>On a more personal note, I'm very passionate about video games(I could give you a discertation on any video game subject if you gave me enough time), and this led me to my interest in computers</p>
               <p>I built my first computer back when I was 14, and I began to learn to code soon after.</p>
             </div>
-            <img className='sidePic' alt="First computer" src={require('./images/me.jpg')}></img>
+            {/* <img className='sidePic' alt="First computer" src={require('./images/me.jpg')}></img> */}
           </div>
         </div>
       </div>
@@ -257,7 +252,7 @@ function App() {
             <div className='pageTextCenter'>
               <p>I have acquired my skills and coding prowess from years of exploration as well as college experience. My time at
                 at a bootcamp bolstered my confidence and skills and specialized me for web development.</p>
-              <p>I have experience working on projects as a development team member <a href=''>and a team leader.</a></p>
+              <p>I have experience working on projects as a development team member <a href='#Projects'>and a team leader.</a></p>
               <p>Please, take a look at what I can do:</p>
             </div>
             <div className='skillList'>
@@ -309,7 +304,7 @@ function App() {
       </div>
 
       <div className="Page Projects" id="Projects">
-        <div className='margins'>
+      <div className='margins'>
           <div className='pageTitle'>
             <h1>My Work</h1>
           </div>
@@ -317,32 +312,27 @@ function App() {
             <div className='bigImage'>
               <img alt="Dangerous To Go Alone" src={require('./images/Dangerous.JPG')}></img>
             </div>
-            <div>
-              <p>Dangerous To Go Alone aims to create a hub for gamers to find others with similar mindsets and interests.</p>
+            <div className='bigText'>
+              <h1>Dangerous To Go Alone</h1>
+              <h4>Dangerous To Go Alone aims to create a hub for gamers to find others with similar mindsets and interests.</h4>
               <p>Uses ReactJS, GraphQL, and MongoDB</p>
             </div>
           </div>
-          <div className='project'>
-            <img alt='Reel Cinema'></img>
-          </div>
-          <div className='project'>
-
-          </div>
-          <div className='project'>
-
-          </div>
+          {/* <div className='smallerProjects'>
+            <div className='project'>
+              <img alt='Reel Cinema' src={require('./images/reelCinema.png')}></img>
+              <h2>Reel Cinema</h2>
+              <p>Theater website using HandlebarsJS, ExpressJS, and MySQL.</p>
+            </div>
+            <div className='project'>
+              <img alt='Reel Cinema' src={require('./images/Beau.JPG')}></img>
+              <p>Fun news site using html, css, and bootstrap</p>
+            </div>
+          </div> */}
         </div>
       </div>
       <div className="Page Contact" id="Contact">
-        {/* <div className="calling-card">
-          <div>
-            <div className="Name">Kyle Sousa</div>
-            <div className="Phone">239-770-0763</div>
-            <div className="Email">Kylesousa756@gmail.com</div>
-            <div className="LinkedIn"></div>
-            <div className="Github"></div>
-          </div>
-        </div> */}
+        
       </div>
       </div>
     </div>

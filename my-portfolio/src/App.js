@@ -192,7 +192,7 @@ function App() {
         <div className="name">
         </div>
         <div className="right">
-          <ul className={"nav-links " + menu}>
+          <ul className={"nav-links"}>
             <a href="#Intro">Introduction</a>
             <a href="#About">About</a>
             <a href="#Projects">Projects</a>

@@ -18,13 +18,15 @@ body {
 }
 
 .nameNav{
+  margin-left: 50px;
   z-index: 10001;
+  color:aqua;
 }
 
 .mob-btn {
   z-index: 999;
   position: relative;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 44px;
@@ -77,15 +79,17 @@ body {
 }
 
 nav{
-  position: sticky;
-  margin-top: 25px;
+  position: fixed;
+  top: 0px;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  background: #2c324b;
+  color: blue;
 }
 
 .name{
@@ -111,16 +115,7 @@ nav{
   margin-right: 10px;
   transition: all .2s ease-in-out;
   word-wrap: normal;
-}
-
-.nav-links.false{
-  transform: translateX(50px);
-  visibility: hidden;
-  opacity: 0;
-}
-
-.nav-links.false a{
-  pointer-events: none;
+  
 }
 
 .nav-links a{
@@ -130,8 +125,8 @@ nav{
   padding:10px;
   cursor: pointer;
   text-decoration: none;
-  color: white;
   transition: all .2s ease-in-out;
+  color: white;
 }
 
 .nav-links a:hover{
@@ -171,6 +166,7 @@ nav{
 }
 
 .Intro{
+  margin-top: 100px;
   flex-direction: row;
   justify-content: space-between;
   margin-left: 7%;
@@ -348,6 +344,11 @@ nav{
 
 
 @media (max-width:800px){
+
+  .mob-btn{
+    display: flex;
+  }
+  
   nav{
     width: 100%;
     margin-top: 0px;
@@ -362,6 +363,10 @@ nav{
     transition: all .2s ease-in-out;
     z-index: 1000;
   
+  }
+
+  .nav-links{
+    display: none;
   }
 
   .nav-links-mobile a {

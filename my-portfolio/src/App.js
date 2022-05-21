@@ -250,6 +250,18 @@ function App() {
               at a bootcamp bolstered my confidence and skills and specialized me for web development.</p>
             <p>I have experience working on projects as a development team member <a href='#Projects'>and a team leader.</a></p>
             <p>Please, take a look at what I can do:</p>
+            <div className='bar'>
+              <div className='frontBar'>Front-End</div>
+            </div>
+            <div className='bar'>
+              <div className='backBar'>Back-End</div>
+            </div>
+            <div className='bar'>
+              <div className='reactBar'>ReactJS</div>
+            </div>
+            <div className='bar'>
+              <div className='javascriptBar'>Javascript</div>
+            </div>
           </div>
           <div className='skillList'>
             <div>

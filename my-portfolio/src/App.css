@@ -162,7 +162,7 @@ nav{
 }
 
 .pageTitle{
-  text-align: center;
+  text-align: left;
   color:aqua;
   width: 40%;
   font-size: 250%;
@@ -172,6 +172,9 @@ nav{
 
 .Intro{
   flex-direction: row;
+  justify-content: space-between;
+  margin-left: 7%;
+  margin-right:7%;
 }
 
 .introText{
@@ -285,6 +288,11 @@ nav{
 
 .project img:hover{
   background: rgba(26, 14, 129, 0.2);
+}
+
+.Skills{
+  margin-left: 7%;
+  margin-right:7%;
 }
 
 

@@ -230,6 +230,25 @@ nav{
   margin-right: 50px;
 }
 
+.bar {
+  width: 100%; /* Full width */
+  background-color: rgb(83, 83, 83); /* Grey background */
+}
+
+.skillBar{
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.skillBar h1{ margin-right: 20px; color: black;}
+
+.frontBar{ width: 75%; background-color: red; }
+.backBar{ width: 90%; background-color: yellow; }
+.reactBar{ width: 85%; background-color: rgb(0, 162, 255); }
+.javascriptBar{ width: 90%; background-color: rgb(67, 185, 83); }
+
 .skillText{
   margin-left: 50px;
 }

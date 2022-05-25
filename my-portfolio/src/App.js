@@ -239,7 +239,7 @@ function App() {
           {/* <img className='sidePic' alt="First computer" src={require('./images/me.jpg')}></img> */}
         </div>
       </div>
-
+      <hr></hr>
       <div className="Page Skills" id="Skills">
         <div className='pageTitle'>
           <h1>Skills</h1>

@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+hr{
+  width: 80%;
+  text-align: center;
+}
+
 p a{
   color:rgb(12, 28, 53);
   font-style: italic;

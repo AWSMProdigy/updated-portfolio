@@ -162,6 +162,7 @@ nav{
 }
 
 .pageTitle{
+  margin-left: 7%;
   text-align: left;
   color:aqua;
   width: 40%;
@@ -240,6 +241,10 @@ nav{
   background-color: rgb(83, 83, 83); /* Grey background */
 }
 
+.skillBarContainer{
+  width: 90%;
+}
+
 .skillBar{
   text-align: right; /* Right-align text */
   padding-top: 10px; /* Add top padding */
@@ -311,6 +316,7 @@ nav{
 }
 
 .Skills{
+  flex-direction: column;
   margin-left: 7%;
   margin-right:7%;
 }
@@ -318,6 +324,7 @@ nav{
 
 .skillList{
   list-style: none;
+  width: 90%;
 }
 
 .skillList li{
@@ -366,7 +373,6 @@ nav{
   box-shadow: 3px -4px;
 }
 
-
 @media (max-width:800px){
 
   .mob-btn{
@@ -379,7 +385,7 @@ nav{
   }
 
   .nav-links-mobile{
-    position: absolute;
+    position: fixed;
     top: 50px;
     width: 100%;
     text-align: center;

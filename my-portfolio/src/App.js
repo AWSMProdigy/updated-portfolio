@@ -4,45 +4,45 @@ import React, { useState } from "react";
 
 function App() {
 
-  window.addEventListener('load', (event) => {
-    let imgBox = document.querySelector('.imgBox');
-    let mouse = document.querySelector('.mouse');
-    let hovered = false;
-    let revealed = false;
+  // window.addEventListener('load', (event) => {
+  //   let imgBox = document.querySelector('.imgBox');
+  //   let mouse = document.querySelector('.mouse');
+  //   let hovered = false;
+  //   let revealed = false;
 
-    const lightPortrait = () =>{
-      revealed = true;
-      mouse.style.transition = `all .5s ease-in-out`;
-      mouse.style.clipPath = `circle(100%)`;
-    }
+  //   const lightPortrait = () =>{
+  //     revealed = true;
+  //     mouse.style.transition = `all .5s ease-in-out`;
+  //     mouse.style.clipPath = `circle(100%)`;
+  //   }
 
-    imgBox.addEventListener('mousemove', (e) => {
-    if(!hovered){
-      window.setTimeout(lightPortrait, 3000);
-      hovered = true;
-    }
-    if(revealed){
-      return;
-    }
-    mouse.style.clipPath = 
-      `circle(10em at ${e.offsetX}px ${e.offsetY}px)`;
-  });
+  //   imgBox.addEventListener('mousemove', (e) => {
+  //   if(!hovered){
+  //     window.setTimeout(lightPortrait, 3000);
+  //     hovered = true;
+  //   }
+  //   if(revealed){
+  //     return;
+  //   }
+  //   mouse.style.clipPath = 
+  //     `circle(10em at ${e.offsetX}px ${e.offsetY}px)`;
+  // });
 
-  const scrollDecrypt = () =>{
-    let element = document.getElementById("secondTitle"),
-        elemRect = element.getBoundingClientRect();
-    if(elemRect.top >= 0 &&
-      elemRect.left >= 0 &&
-      elemRect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      elemRect.right <= (window.innerWidth || document.documentElement.clientWidth)){
-      document.getElementById("pageContainer").removeEventListener('scroll', scrollDecrypt);
-      let originalValue = ["I told you I'd find you"];
-      decryptWord([element], originalValue);
-    }
-  }
+  // const scrollDecrypt = () =>{
+  //   let element = document.getElementById("secondTitle"),
+  //       elemRect = element.getBoundingClientRect();
+  //   if(elemRect.top >= 0 &&
+  //     elemRect.left >= 0 &&
+  //     elemRect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+  //     elemRect.right <= (window.innerWidth || document.documentElement.clientWidth)){
+  //     document.getElementById("pageContainer").removeEventListener('scroll', scrollDecrypt);
+  //     let originalValue = ["I told you I'd find you"];
+  //     decryptWord([element], originalValue);
+  //   }
+  // }
 
-  // document.getElementById("pageContainer").addEventListener('scroll', scrollDecrypt, false);
-  })
+  // // document.getElementById("pageContainer").addEventListener('scroll', scrollDecrypt, false);
+  // })
 
   
   const [menu, setmenu] = useState("false");
@@ -61,7 +61,6 @@ function App() {
     for(let i = 0; i < wordArray.length; i++){
       let word = wordArray[i].innerHTML.split('');
       for(let j = 0; j < originalValues[i].length; j++){
-        console.log(j);
         if(word[j] === undefined){
           word += originalValues[i][j];
         }
@@ -111,9 +110,7 @@ function App() {
    const finishPageHelper = (element, originalValue) => {
     let word = element.innerHTML.split('');
     for(let i = 0; i < Math.max(originalValue.length, word.length); i++){
-      console.log(i);
       if(!originalValue[i]){
-        console.log("Popping");
         word.pop();
         break;
       }
@@ -195,8 +192,8 @@ function App() {
           <ul className={"nav-links"}>
             <a href="#Intro">Introduction</a>
             <a href="#About">About</a>
-            <a href="#Projects">Projects</a>
             <a href="#Skills">Skills</a>
+            <a href="#Projects">Projects</a>
             <a href="#Contact">Contact</a>
           </ul>
           <div className='mob-btn' onClick={showmenu}>
@@ -233,23 +230,16 @@ function App() {
             <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
             <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
             <p>My time as a company commander in JROTC taught me the importance of working as a team and respecting the chain of command.</p>
-            <p>On a more personal note, I'm very passionate about video games(I could give you a discertation on any video game subject if you gave me enough time), and this led me to my interest in computers</p>
-            <p>I built my first computer back when I was 14, and I began to learn to code soon after.</p>
+            <p>On a more personal note, I'm very passionate about video games(I could give you a discertation on any video game subject if you gave me enough time), and this led me to my interest in computers.</p>
           </div>
           {/* <img className='sidePic' alt="First computer" src={require('./images/me.jpg')}></img> */}
         </div>
       </div>
-      <hr></hr>
       <div className="Page Skills" id="Skills">
         <div className='pageTitle'>
           <h1>Skills</h1>
         </div>
-        <div className='pageText'>
-          <div className='pageTextCenter'>
-            <p>I have acquired my skills and coding prowess from years of exploration as well as college experience. My time at
-              at a bootcamp bolstered my confidence and skills and specialized me for web development.</p>
-            <p>I have experience working on projects as a development team member <a href='#Projects'>and a team leader.</a></p>
-            <p>Please, take a look at what I can do:</p>
+          <div className='skillBarContainer'>
             <span>Front-End</span>
             <div className='bar'>
               <div className='skillBar frontBar'>
@@ -259,19 +249,19 @@ function App() {
             <span>Back-End</span>
             <div className='bar'>
               <div className='skillBar backBar'>
-                <h1>75%</h1>
+                <h1>90%</h1>
               </div>
             </div>
             <span>ReactJS</span>
             <div className='bar'>
               <div className='skillBar reactBar'>
-                <h1>75%</h1>
+                <h1>85%</h1>
               </div>
             </div>
             <span>Javascript</span>
             <div className='bar'>
               <div className='skillBar javascriptBar'>
-                <h1>75%</h1>
+                <h1>90%</h1>
               </div>
             </div>
           </div>
@@ -319,14 +309,13 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
       </div>
 
       <div className="Page Projects" id="Projects">
-      <div className='margins'>
           <div className='pageTitle'>
             <h1>My Work</h1>
           </div>
+          <div className='margins'>
           <div className='bigProject'>
             <div className='bigImage'>
               <img alt="Dangerous To Go Alone" src={require('./images/Dangerous.JPG')}></img>

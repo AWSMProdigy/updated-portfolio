@@ -95,6 +95,7 @@ nav{
   margin-right: auto;
   background: #2c324b;
   color: blue;
+  z-index: 1;
 }
 
 .name{
@@ -162,10 +163,11 @@ nav{
 }
 
 .pageTitle{
+  width: fit-content;
+  word-wrap: normal;
   margin-left: 7%;
   text-align: left;
   color:aqua;
-  width: 40%;
   font-size: 250%;
   margin-right: auto;
   margin-bottom: 50px;
@@ -246,16 +248,24 @@ nav{
 }
 
 .skillBar{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: right; /* Right-align text */
   padding-top: 10px; /* Add top padding */
   padding-bottom: 10px; /* Add bottom padding */
   color: white; /* White text color */
 }
 
+.skillBar span{
+  margin-left: 20px;
+}
+
 .skillBar h1{ margin-right: 20px; color: black;}
 
 .frontBar{ width: 75%; background-color: red; }
-.backBar{ width: 90%; background-color: yellow; }
+.backBar{ width: 90%; background-color: rgb(180, 180, 0); }
 .reactBar{ width: 85%; background-color: rgb(0, 162, 255); }
 .javascriptBar{ width: 90%; background-color: rgb(67, 185, 83); }
 
@@ -263,44 +273,51 @@ nav{
   margin-left: 50px;
 }
 
-.projectRow{
-  height: 45vh;
-  width: 90vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .project{
-  width: 45%;
+  width: fit-content;
   text-align: center;
 }
 
-.bigProject{
+.projectCatalog{
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
-.bigProject img {
-  height: 300px;
-  width: 533px;
-}
-
-.bigImage{
-  
-}
-
-.bigText{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.projectImage{
+  position: relative;
   text-align: center;
+  color: rgba(255, 255, 255, 0);
+  transition: all .1s;
 }
 
-.smallerProjects{
-  display: flex;
-  flex-direction: row;
+.projectImage h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform .3s;
+}
+
+.projectImage:hover h1{
+  transform: translate(-50%, -130%)
+}
+
+.projectImage h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform .3s;
+}
+
+.projectImage:hover > h2{
+  transform: translate(-50%, 80%);
+}
+
+.projectImage:hover{
+  color: white;
 }
 
 .project img{
@@ -311,9 +328,7 @@ nav{
   transition: all .2s ease-out;
 }
 
-.project img:hover{
-  background: rgba(26, 14, 129, 0.2);
-}
+
 
 .Skills{
   flex-direction: column;
@@ -438,6 +453,7 @@ nav{
 
   .pageTitle{
     margin-left: auto;
+    text-align: center;
   }
 
   .pageText{

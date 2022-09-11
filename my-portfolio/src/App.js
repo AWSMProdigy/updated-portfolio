@@ -3,47 +3,6 @@ import 'font-awesome/css/font-awesome.min.css';
 import React, { useState } from "react";
 
 function App() {
-
-  // window.addEventListener('load', (event) => {
-  //   let imgBox = document.querySelector('.imgBox');
-  //   let mouse = document.querySelector('.mouse');
-  //   let hovered = false;
-  //   let revealed = false;
-
-  //   const lightPortrait = () =>{
-  //     revealed = true;
-  //     mouse.style.transition = `all .5s ease-in-out`;
-  //     mouse.style.clipPath = `circle(100%)`;
-  //   }
-
-  //   imgBox.addEventListener('mousemove', (e) => {
-  //   if(!hovered){
-  //     window.setTimeout(lightPortrait, 3000);
-  //     hovered = true;
-  //   }
-  //   if(revealed){
-  //     return;
-  //   }
-  //   mouse.style.clipPath = 
-  //     `circle(10em at ${e.offsetX}px ${e.offsetY}px)`;
-  // });
-
-  // const scrollDecrypt = () =>{
-  //   let element = document.getElementById("secondTitle"),
-  //       elemRect = element.getBoundingClientRect();
-  //   if(elemRect.top >= 0 &&
-  //     elemRect.left >= 0 &&
-  //     elemRect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-  //     elemRect.right <= (window.innerWidth || document.documentElement.clientWidth)){
-  //     document.getElementById("pageContainer").removeEventListener('scroll', scrollDecrypt);
-  //     let originalValue = ["I told you I'd find you"];
-  //     decryptWord([element], originalValue);
-  //   }
-  // }
-
-  // // document.getElementById("pageContainer").addEventListener('scroll', scrollDecrypt, false);
-  // })
-
   
   const [menu, setmenu] = useState("false");
   const [mobMenu, setMobMenu] = useState("mob-false");
@@ -70,6 +29,7 @@ function App() {
         }
       }
       wordArray[i].innerHTML = word.join('');
+
     }
   }
 
@@ -132,7 +92,8 @@ function App() {
       count--;
       finishPageHelper(element, originalValue);
       if(count === 0){
-        clearInterval(finishInterval)
+        element.innerHTML = originalValue;
+        clearInterval(finishInterval);
       }
     }, 60);
    }
@@ -239,28 +200,28 @@ function App() {
         <div className='pageTitle'>
           <h1>Skills</h1>
         </div>
-          <div className='skillBarContainer'>
-            <span>Front-End</span>
+          <div className='skillBarContainer'>     
             <div className='bar'>
               <div className='skillBar frontBar'>
+                <span>Front-End</span>
                 <h1>75%</h1>
               </div>
             </div>
-            <span>Back-End</span>
             <div className='bar'>
               <div className='skillBar backBar'>
+                <span>Back-End</span>
                 <h1>90%</h1>
               </div>
             </div>
-            <span>ReactJS</span>
             <div className='bar'>
               <div className='skillBar reactBar'>
+                <span>ReactJS</span>
                 <h1>85%</h1>
               </div>
             </div>
-            <span>Javascript</span>
             <div className='bar'>
               <div className='skillBar javascriptBar'>
+                <span>Javascript</span>
                 <h1>90%</h1>
               </div>
             </div>
@@ -315,29 +276,37 @@ function App() {
           <div className='pageTitle'>
             <h1>My Work</h1>
           </div>
-          <div className='margins'>
-          <div className='bigProject'>
-            <div className='bigImage'>
-              <img alt="Dangerous To Go Alone" src={require('./images/Dangerous.JPG')}></img>
+          <div className='projectCatalog'>
+            <div className='project'>
+              <div className='projectImage'>
+                <img alt="Dangerous To Go Alone" src={require('./images/Dangerous.JPG')}></img>
+                <h1>Dangerous To Go Alone</h1>
+                <h2>React, MongoDB</h2>
+              </div>
             </div>
-            <div className='bigText'>
-              <h1>Dangerous To Go Alone</h1>
-              <h4>Dangerous To Go Alone aims to create a hub for gamers to find others with similar mindsets and interests.</h4>
-              <p>Uses ReactJS, GraphQL, and MongoDB</p>
+            <div className='project'>
+              <div className='projectImage'>
+                <img alt="Reel Cinema" src={require('./images/reelCinema.png')}></img>
+                <h1>Reel Cinema</h1>
+                <h2>HandlebarsJS, GraphQL, MySQL</h2>
+              </div>
+            </div>
+            <div className='project'>
+              <div className='projectImage'>
+                <img alt="The Daily Felon" src={require('./images/Beau.JPG')}></img>
+                <h1>The Daily Felon</h1>
+                <h2>HTML/CSS, Javascript</h2>
+              </div>
+            </div>
+            <div className='project'>
+              <div className='projectImage'>
+                <img alt="Twitter Bot" src={require('./images/Twitter.JPG')}></img>
+                <h1>Twitter Bot</h1>
+                <h2>Javascript</h2>
+              </div>
             </div>
           </div>
-          {/* <div className='smallerProjects'>
-            <div className='project'>
-              <img alt='Reel Cinema' src={require('./images/reelCinema.png')}></img>
-              <h2>Reel Cinema</h2>
-              <p>Theater website using HandlebarsJS, ExpressJS, and MySQL.</p>
-            </div>
-            <div className='project'>
-              <img alt='Reel Cinema' src={require('./images/Beau.JPG')}></img>
-              <p>Fun news site using html, css, and bootstrap</p>
-            </div>
-          </div> */}
-        </div>
+          
       </div>
       <div className="Page Contact" id="Contact">
         

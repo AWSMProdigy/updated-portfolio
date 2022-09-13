@@ -2,6 +2,10 @@
     margin-top: 100px;
 }
 
+.projectDesc{
+    
+}
+
 .flexBox{
     display: flex;
     flex-direction: row;
@@ -12,6 +16,8 @@
 .techStack{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 @media (max-width: 800px){

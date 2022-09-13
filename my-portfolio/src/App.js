@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Project from "./components/Project";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 
 function App() {
@@ -33,10 +35,12 @@ function App() {
     <BrowserRouter>
     <nav>
         <div className="left">
-          <div className='nameNav'>
-            <h3>Kyle Sousa</h3>
-            <h5>Full-Stack Web Developer</h5>
-          </div>
+          <Link to={"/"}>
+            <div className='nameNav'>
+              <h3>Kyle Sousa</h3>
+              <h5>Full-Stack Web Developer</h5>
+            </div>
+          </Link>
         </div>
         <div className="name">
         </div>

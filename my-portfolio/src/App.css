@@ -298,6 +298,7 @@ nav{
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform .3s;
+  pointer-events: none;
 }
 
 .projectImage:hover h1{
@@ -310,6 +311,7 @@ nav{
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform .3s;
+  pointer-events: none;
 }
 
 .projectImage:hover > h2{

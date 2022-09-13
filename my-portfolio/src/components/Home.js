@@ -1,6 +1,7 @@
 import '../App.css';
 import 'font-awesome/css/font-awesome.min.css';
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   
@@ -229,28 +230,28 @@ function Home() {
           <div className='projectCatalog'>
             <div className='project'>
               <div className='projectImage'>
-                <img alt="Dangerous To Go Alone" src={require('../images/Dangerous.JPG')}></img>
+                <Link to="/Project"><img alt="Dangerous To Go Alone" src={require('../images/Dangerous.JPG')}></img></Link>
                 <h1>Dangerous To Go Alone</h1>
                 <h2>React, MongoDB</h2>
               </div>
             </div>
             <div className='project'>
               <div className='projectImage'>
-                <img alt="Reel Cinema" src={require('../images/reelCinema.png')}></img>
+              <Link to="/Project"><img alt="Reel Cinema" src={require('../images/reelCinema.png')}></img></Link>
                 <h1>Reel Cinema</h1>
                 <h2>HandlebarsJS, GraphQL, MySQL</h2>
               </div>
             </div>
             <div className='project'>
               <div className='projectImage'>
-                <img alt="The Daily Felon" src={require('../images/Beau.JPG')}></img>
+              <Link to="/Project"><img alt="The Daily Felon" src={require('../images/Beau.JPG')}></img></Link>
                 <h1>The Daily Felon</h1>
                 <h2>HTML/CSS, Javascript</h2>
               </div>
             </div>
             <div className='project'>
               <div className='projectImage'>
-                <img alt="Twitter Bot" src={require('../images/Twitter.JPG')}></img>
+              <Link to="/Project"><img alt="Twitter Bot" src={require('../images/Twitter.JPG')}></img></Link>
                 <h1>Twitter Bot</h1>
                 <h2>Javascript</h2>
               </div>

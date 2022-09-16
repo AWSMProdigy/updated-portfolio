@@ -6,6 +6,10 @@ function Nav(){
     const [mobMenu, setMobMenu] = useState("mob-false");
     const location = useLocation();
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [location]);
+
 
     const hidden = {
         visibility: 'hidden'

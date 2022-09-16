@@ -3,7 +3,7 @@
 }
 
 .projectDesc{
-    
+    width: 40%;
 }
 
 .flexBox{
@@ -11,17 +11,33 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.flexBox img{
+  width: 40%;
+  height: auto;
 }
 
 .techStack{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.iconList{
+    display: flex;
     justify-content: space-evenly;
 }
 
 @media (max-width: 800px){
     .flexBox{
         flex-direction: column;
+    }
+    .flexBox img{
+        width: 80%;
+        height: auto;
     }
 }

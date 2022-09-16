@@ -5,7 +5,11 @@ import { Link } from "react-router-dom";
 
 function Home() {
   
-
+  let dangerous = {
+    name: "It's Dangerous To Go Alone",
+    desc: "It's Dangerous To Go Alone! A website designed to bring gamers together by connecting people with others of similar gaming interests gaming styles, and availability.",
+    stack: ["React, MongoDB, Express"]
+  };
 
   const decryptHelper = (wordArray, characters) =>{
     let charactersLength = characters.length;
@@ -230,7 +234,7 @@ function Home() {
           <div className='projectCatalog'>
             <div className='project'>
               <div className='projectImage'>
-                <Link to="/Project"><img alt="Dangerous To Go Alone" src={require('../images/Dangerous.JPG')}></img></Link>
+                <Link to="/Project" state={dangerous}><img alt="Dangerous To Go Alone" src={require('../images/Dangerous.JPG')}></img></Link>
                 <h1>Dangerous To Go Alone</h1>
                 <h2>React, MongoDB</h2>
               </div>

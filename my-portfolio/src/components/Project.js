@@ -1,37 +1,31 @@
 import "./Project.css";
 import 'font-awesome/css/font-awesome.min.css';
+import {useLocation} from "react-router-dom"
 
 function Project(){
+
+    let data = useLocation();
+    console.log(data.state);
+
+    let stack = '';
+
+    for(let i = 0; i < data.state.stack.length; i++){
+        stack += `<div><h1>` + data.state.stack[i] + `</h1></div>`;
+    }
 
     return(
         <div className="Project">
             <div className="flexBox">
                 <img src={require('../images/Dangerous.JPG')}></img>
                 <div className="projectDesc">
-                    <p>It's Dangerous To Go Alone! A website designed to bring gamers together by connecting people with others of similar gaming interests,
-                        gaming styles, and availability.
+                    <p>{data.state.desc}
                     </p>
                 </div>
             </div>
                 <div className="techStack">
                     <h1>Tech Stack:</h1>
                     <div className="iconList">
-                        <div>
-                            <h1>ReactJS</h1>
-                            <i className="fa-brands fa-react"></i>
-                        </div>
-                        <div>
-                            <h1>ReactJS</h1>
-                            <i className="fa-brands fa-react"></i>
-                        </div>
-                        <div>
-                            <h1>ReactJS</h1>
-                            <i className="fa-brands fa-react"></i>
-                        </div>
-                        <div>
-                            <h1>ReactJS</h1>
-                            <i className="fa-brands fa-react"></i>
-                        </div>
+                        {stack}
                     </div>
                 </div>
         </div>

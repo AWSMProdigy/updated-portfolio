@@ -3,6 +3,16 @@
   margin: 0;
 }
 
+body{
+  min-height: 100vh;
+}
+
+body::after{
+  content: '';
+  display: block;
+  height: 50px;
+}
+
 hr{
   width: 80%;
   text-align: center;
@@ -16,6 +26,7 @@ p a{
 body {
   background: #0b0f20;
   color: white;
+  position: relative;
 }
 
 .invis{
@@ -388,6 +399,21 @@ nav{
   transform: rotate(20deg);
   background: rgb(226, 203, 100);
   box-shadow: 3px -4px;
+}
+
+footer{
+  margin-top: 10px;
+  width: 100vw;
+  height: 50px;
+  background: #2c324b;
+  text-align: center;
+  color: aqua;
+  position: absolute;
+  bottom: 0;
+}
+
+footer h1 svg{
+  color: red;
 }
 
 @media (max-width:800px){

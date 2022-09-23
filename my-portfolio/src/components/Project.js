@@ -10,7 +10,7 @@ function Project(){
     let stack = '';
 
     for(let i = 0; i < data.state.stack.length; i++){
-        stack += `<div><h1>` + data.state.stack[i] + `</h1></div>`;
+        stack += `<div><h1>${data.state.stack[i]}</h1></div>`;
     }
 
     return(
@@ -24,8 +24,7 @@ function Project(){
             </div>
                 <div className="techStack">
                     <h1>Tech Stack:</h1>
-                    <div className="iconList">
-                        {stack}
+                    <div className="iconList" dangerouslySetInnerHTML={{__html: stack}}>
                     </div>
                 </div>
         </div>

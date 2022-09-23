@@ -8,8 +8,26 @@ function Home() {
   let dangerous = {
     name: "It's Dangerous To Go Alone",
     desc: "It's Dangerous To Go Alone! A website designed to bring gamers together by connecting people with others of similar gaming interests gaming styles, and availability.",
-    stack: ["React, MongoDB, Express"]
+    stack: ["React", "MongoDB", "Express"]
   };
+
+  let reelCinema = {
+    name: "Reel Cinema",
+    desc: "Mock theater website with friend functionality and ticket ordering. Created to solve a problem with some modern theater websites.",
+    stack: ["HandleBarJS", "Express", "GraphQL"]
+  }
+
+  let dailyFelon = {
+    name: "Daily Felon",
+    desc: "Website meant to provide humor. Takes several pre-written stories and pictures and creates unique stories based off of comic book heroes and villains and randomly creates humorous stories with javascript.",
+    stack: ["HTML/CSS", "Javascript"]
+  }
+
+  let twitterBot = {
+    name: "Twitter Bot",
+    desc: "Bot designed to display the latest tweet from a chosen individual. This was originally done to stay up to date on exclusive product news.",
+    stack: ["React", "Express"]
+  }
 
   const decryptHelper = (wordArray, characters) =>{
     let charactersLength = characters.length;

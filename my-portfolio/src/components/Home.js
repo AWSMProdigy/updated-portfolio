@@ -240,6 +240,7 @@ function Home() {
                 <li>Office 365</li>
                 <li>Linux shell</li>
                 <li>Object-Oriented Programming</li>
+                <li>Dynamic Programming</li>
               </div>
             </div>
           </div>
@@ -282,7 +283,15 @@ function Home() {
           
       </div>
       <div className="Page Contact" id="Contact">
-        
+        <div className='pageTitle'>
+            <h1>Contact Me</h1>
+          </div>
+        <ul className='contactList'>
+          <li>239-770-0763</li>
+          <li><a href="https://github.com/AWSMProdigy"><i className='fa fa-github fa-4x'></i></a></li>
+          <li><a href="https://www.linkedin.com/in/kyle-sousa-1a507b156/"><i className='fa fa-linkedin fa-4x'></i></a></li>
+        </ul>
+        <a href="mailto: kylesousa756@gmail.com">Send me an email!</a>
       </div>
       </div>
   );

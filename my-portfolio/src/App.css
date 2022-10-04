@@ -168,10 +168,10 @@ nav{
   flex-direction: column;
 }
 
-.About{
+/* .About{
   margin-left: 7%;
   margin-right:7%;
-}
+} */
 
 .pageTitle{
   width: fit-content;
@@ -241,12 +241,16 @@ nav{
   line-height: 35px;
   margin-left: 50px;
   margin-right: 50px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .pageTextCenter{
   margin-top: auto;
   margin-bottom: auto;
-  margin-right: 50px;
+  text-align: center;
+  max-width: 50%;
 }
 
 .bar {
@@ -345,8 +349,7 @@ nav{
 
 .Skills{
   flex-direction: column;
-  margin-left: 7%;
-  margin-right:7%;
+  
 }
 
 
@@ -414,6 +417,17 @@ nav{
 
 .contactList > li > a{
   width: fit-content;
+  color: aqua;
+}
+
+.contactList > li > a:visited {
+  text-decoration: none;
+  color: aqua;
+}
+
+.contactList > li > a:hover {
+  text-decoration: none;
+  color: greenyellow;
 }
 
 footer{

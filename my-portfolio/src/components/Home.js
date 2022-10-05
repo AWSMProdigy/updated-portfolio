@@ -4,6 +4,17 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Home() {
+
+  const [showNum, setNum ] = useState(false);
+
+  const dispNone = {
+    display: 'none'
+  }
+
+  const disp = {
+    display: 'block'
+  }
+
   
   let dangerous = {
     name: "It's Dangerous To Go Alone",
@@ -139,12 +150,13 @@ function Home() {
       }
     }, 10);
   }
+
+  const showNumber = (e) => {
+    setNum(!showNum);
+  }
   
   return (
     <div className="App">
-      
-
-
       <div className="Page Intro" id="Intro">
         <div className='introText'>
           <h1 className='nameTitle'>Hi, I'm Kyle Sousa,</h1>
@@ -287,11 +299,12 @@ function Home() {
             <h1>Contact Me</h1>
           </div>
         <ul className='contactList'>
-          <li>239-770-0763</li>
+          <li onClick={showNumber} style={showNum ? dispNone : disp}><i id="phoneIcon" className='fa fa-phone fa-4x'></i></li>
+          <li onClick={showNumber} id='number' style={!showNum ? dispNone : disp}><span>239-770-0763</span></li>
           <li><a href="https://github.com/AWSMProdigy"><i className='fa fa-github fa-4x'></i></a></li>
           <li><a href="https://www.linkedin.com/in/kyle-sousa-1a507b156/"><i className='fa fa-linkedin fa-4x'></i></a></li>
+          <li><a href="mailto: kylesousa756@gmail.com"><i className='fa fa-envelope fa-4x'></i></a></li>
         </ul>
-        <a href="mailto: kylesousa756@gmail.com">Send me an email!</a>
       </div>
       </div>
   );

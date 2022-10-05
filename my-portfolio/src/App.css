@@ -230,7 +230,7 @@ nav{
 
 .encryptWord{
   text-decoration: underline;
-  color: blue;
+  color: aqua;
   cursor: pointer;
 }
 
@@ -249,8 +249,12 @@ nav{
 .pageTextCenter{
   margin-top: auto;
   margin-bottom: auto;
-  text-align: center;
+  text-align: left;
   max-width: 50%;
+}
+
+.pageTextCenter > p{
+  margin-bottom: 10px;
 }
 
 .bar {
@@ -413,6 +417,21 @@ nav{
   white-space: nowrap;
   text-align: center;
   margin: 0 auto;
+  color: aqua;
+}
+
+.contactList > li:hover{
+  cursor: pointer;
+  color: greenyellow;
+}
+
+#phoneNum{
+  cursor: pointer;
+  color: aqua;
+}
+
+#phoneNum:hover{
+  color: greenyellow;
 }
 
 .contactList > li > a{

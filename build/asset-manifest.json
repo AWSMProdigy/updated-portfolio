@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/kylesousa.com/static/css/main.a4a2b19d.css",
-    "main.js": "/kylesousa.com/static/js/main.a22e8a7c.js",
-    "static/js/787.128fc6e9.chunk.js": "/kylesousa.com/static/js/787.128fc6e9.chunk.js",
-    "static/media/reelCinema.png": "/kylesousa.com/static/media/reelCinema.87348aa97df9a86729d0.png",
-    "static/media/fontawesome-webfont.svg?v=4.7.0": "/kylesousa.com/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/Beau.JPG": "/kylesousa.com/static/media/Beau.af398be19a78c7bf1fba.JPG",
-    "static/media/fontawesome-webfont.eot": "/kylesousa.com/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
-    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/kylesousa.com/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/Dangerous.JPG": "/kylesousa.com/static/media/Dangerous.9363fe4ee27a96aef392.JPG",
-    "static/media/me.jpg": "/kylesousa.com/static/media/me.d52f1373f7a33fe20159.jpg",
-    "static/media/fontawesome-webfont.woff?v=4.7.0": "/kylesousa.com/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/kylesousa.com/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/Twitter.JPG": "/kylesousa.com/static/media/Twitter.35aee46098272b0f7bd0.JPG",
-    "index.html": "/kylesousa.com/index.html",
-    "main.a4a2b19d.css.map": "/kylesousa.com/static/css/main.a4a2b19d.css.map",
-    "main.a22e8a7c.js.map": "/kylesousa.com/static/js/main.a22e8a7c.js.map",
-    "787.128fc6e9.chunk.js.map": "/kylesousa.com/static/js/787.128fc6e9.chunk.js.map"
+    "main.css": "/static/css/main.29e6c887.css",
+    "main.js": "/static/js/main.8e085edd.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/reelCinema.png": "/static/media/reelCinema.87348aa97df9a86729d0.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/Beau.JPG": "/static/media/Beau.af398be19a78c7bf1fba.JPG",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/Dangerous.JPG": "/static/media/Dangerous.9363fe4ee27a96aef392.JPG",
+    "static/media/me.jpg": "/static/media/me.d52f1373f7a33fe20159.jpg",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/Twitter.JPG": "/static/media/Twitter.35aee46098272b0f7bd0.JPG",
+    "index.html": "/index.html",
+    "main.29e6c887.css.map": "/static/css/main.29e6c887.css.map",
+    "main.8e085edd.js.map": "/static/js/main.8e085edd.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4a2b19d.css",
-    "static/js/main.a22e8a7c.js"
+    "static/css/main.29e6c887.css",
+    "static/js/main.8e085edd.js"
   ]
 }

@@ -166,7 +166,7 @@ function Home() {
           <h1 className='nameTitle'>Hi, I'm Kyle Sousa,</h1>
           <h2>A full-stack web developer</h2>
           <h3>who loves building efficent and complex solutions to keep the user experience easy and streamlined.</h3>
-          <h1>I <span className='encryptWord' onClick={pageDecrypt} word-data={["love", "adore", "enjoy", "value"]}>____</span> what I do</h1>
+          <h1 className='decryptLine'>I <span className='encryptWord' onClick={pageDecrypt} word-data={["love", "adore", "enjoy", "value"]}>____</span> what I do</h1>
         </div>
         <img className="imgBox" src={require('../images/me.jpg')}></img>
       </div>

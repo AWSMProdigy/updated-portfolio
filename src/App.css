@@ -511,7 +511,7 @@ footer h1 svg{
 
   .nav-links-mobile.mob-false{
     transform: translateY(50px);
-    visibility: hidden;
+    height: 0;
     opacity: 0;
   }
 
@@ -536,6 +536,15 @@ footer h1 svg{
     flex-direction: column;
   }
 
+  .pageTextCenter{
+    max-width: 100%;
+  }
+
+  .decryptLine{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   .Intro{
     flex-direction: column;
   }
@@ -543,5 +552,9 @@ footer h1 svg{
   .introText{
     width: 80%;
     text-align: center;
+  }
+
+  .project img{
+    max-width: 90%;
   }
 }

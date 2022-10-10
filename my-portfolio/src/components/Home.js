@@ -18,26 +18,30 @@ function Home() {
   
   let dangerous = {
     name: "It's Dangerous To Go Alone",
-    desc: "It's Dangerous To Go Alone! A website designed to bring gamers together by connecting people with others of similar gaming interests gaming styles, and availability.",
-    stack: ["React", "MongoDB", "Express"]
+    desc: "It's Dangerous To Go Alone! A website designed to bring gamers together by connecting people with others of similar gaming interests, styles, and availability.",
+    stack: ["React", "MongoDB", "Express"],
+    picture: "Dangerous.JPG"
   };
 
   let reelCinema = {
     name: "Reel Cinema",
     desc: "Mock theater website with friend functionality and ticket ordering. Created to solve a problem with some modern theater websites.",
-    stack: ["HandleBarJS", "Express", "GraphQL"]
+    stack: ["HandleBarJS", "Express", "GraphQL"],
+    picture: "reelCinema.png"
   }
 
   let dailyFelon = {
     name: "Daily Felon",
     desc: "Website meant to provide humor. Takes several pre-written stories and pictures and creates unique stories based off of comic book heroes and villains and randomly creates humorous stories with javascript.",
-    stack: ["HTML/CSS", "Javascript"]
+    stack: ["HTML/CSS", "Javascript"],
+    picture: "Beau.JPG"
   }
 
   let twitterBot = {
     name: "Twitter Bot",
     desc: "Bot designed to display the latest tweet from a chosen individual. This was originally done to stay up to date on exclusive product news.",
-    stack: ["React", "Express"]
+    stack: ["React", "Express"],
+    picture: "Twitter.JPG"
   }
 
   const decryptHelper = (wordArray, characters) =>{
@@ -139,7 +143,7 @@ function Home() {
     if(index > -1){
       newArray.splice(index, 1);
     }
-    let originalValue = newArray[Math.floor(Math.random() * ((newArray.length - 1)-0+(newArray.length - 1)) + 0)]
+    let originalValue = newArray[Math.floor(Math.random() * newArray.length)];
     let count = e.target.innerHTML.length;
     const decryptInterval = setInterval(function(){
       count--;
@@ -162,7 +166,7 @@ function Home() {
           <h1 className='nameTitle'>Hi, I'm Kyle Sousa,</h1>
           <h2>A full-stack web developer</h2>
           <h3>who loves building efficent and complex solutions to keep the user experience easy and streamlined.</h3>
-          <h1>I <span className='encryptWord' onClick={pageDecrypt} word-data={["love", "adore"]}>____</span> what I do</h1>
+          <h1>I <span className='encryptWord' onClick={pageDecrypt} word-data={["love", "adore", "enjoy", "value"]}>____</span> what I do</h1>
         </div>
         <img className="imgBox" src={require('../images/me.jpg')}></img>
       </div>
@@ -272,21 +276,21 @@ function Home() {
             </div>
             <div className='project'>
               <div className='projectImage'>
-              <Link to="/Project"><img alt="Reel Cinema" src={require('../images/reelCinema.png')}></img></Link>
+              <Link to="/Project" state={reelCinema}><img alt="Reel Cinema" src={require('../images/reelCinema.png')}></img></Link>
                 <h1>Reel Cinema</h1>
                 <h2>HandlebarsJS, GraphQL, MySQL</h2>
               </div>
             </div>
             <div className='project'>
               <div className='projectImage'>
-              <Link to="/Project"><img alt="The Daily Felon" src={require('../images/Beau.JPG')}></img></Link>
+              <Link to="/Project" state={dailyFelon}><img alt="The Daily Felon" src={require('../images/Beau.JPG')}></img></Link>
                 <h1>The Daily Felon</h1>
                 <h2>HTML/CSS, Javascript</h2>
               </div>
             </div>
             <div className='project'>
               <div className='projectImage'>
-              <Link to="/Project"><img alt="Twitter Bot" src={require('../images/Twitter.JPG')}></img></Link>
+              <Link to="/Project" state={twitterBot}><img alt="Twitter Bot" src={require('../images/Twitter.JPG')}></img></Link>
                 <h1>Twitter Bot</h1>
                 <h2>Javascript</h2>
               </div>
@@ -299,8 +303,8 @@ function Home() {
             <h1>Contact Me</h1>
           </div>
         <ul className='contactList'>
-          <li onClick={showNumber} style={showNum ? dispNone : disp}><i id="phoneIcon" className='fa fa-phone fa-4x'></i></li>
-          <li onClick={showNumber} id='number' style={!showNum ? dispNone : disp}><span>239-770-0763</span></li>
+          <li onClick={showNumber} style={showNum ? dispNone : disp}><i id="phoneIcon" className='fa fa-phone fa-4x phoneContact'></i></li>
+          <li onClick={showNumber} id='number' style={!showNum ? dispNone : disp}><span className='phoneContact'>239-770-0763</span></li>
           <li><a href="https://github.com/AWSMProdigy"><i className='fa fa-github fa-4x'></i></a></li>
           <li><a href="https://www.linkedin.com/in/kyle-sousa-1a507b156/"><i className='fa fa-linkedin fa-4x'></i></a></li>
           <li><a href="mailto: kylesousa756@gmail.com"><i className='fa fa-envelope fa-4x'></i></a></li>

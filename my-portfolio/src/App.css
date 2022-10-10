@@ -1,6 +1,7 @@
 * {
   scroll-behavior: smooth;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body{
@@ -312,6 +313,7 @@ nav{
 }
 
 .projectImage h1{
+  white-space: nowrap;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -325,6 +327,7 @@ nav{
 }
 
 .projectImage h2{
+  white-space: nowrap;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -417,26 +420,23 @@ nav{
   white-space: nowrap;
   text-align: center;
   margin: 0 auto;
-  color: aqua;
 }
 
-.contactList > li:hover{
-  cursor: pointer;
-  color: greenyellow;
-}
-
-#phoneNum{
+.phoneContact{
   cursor: pointer;
   color: aqua;
+  transition: all .2s ease-in-out;
 }
 
-#phoneNum:hover{
+.phoneContact:hover{
   color: greenyellow;
 }
 
 .contactList > li > a{
   width: fit-content;
   color: aqua;
+  transition: all .2s ease-in-out;
+
 }
 
 .contactList > li > a:visited {

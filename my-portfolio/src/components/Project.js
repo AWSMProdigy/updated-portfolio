@@ -16,7 +16,7 @@ function Project(){
     return(
         <div className="Project">
             <div className="flexBox">
-                <img src={require('../images/Dangerous.JPG')}></img>
+                <img src={require(`../images/${data.state.picture}`)}></img>
                 <div className="projectDesc">
                     <p>{data.state.desc}
                     </p>

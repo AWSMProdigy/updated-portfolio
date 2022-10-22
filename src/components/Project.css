@@ -14,9 +14,9 @@
     margin-bottom: 40px;
 }
 
-.flexBox img{
-  width: 40%;
-  height: auto;
+.flexBox img {
+    width: 40%;
+    height: auto;
 }
 
 .techStack{
@@ -30,7 +30,25 @@
 .iconList{
     display: flex;
     justify-content: space-evenly;
+    list-style: none;
 }
+
+.iconList > li > a{
+    width: fit-content;
+    color: aqua;
+    transition: all .2s ease-in-out;
+  
+  }
+  
+  .iconList > li > a:visited {
+    text-decoration: none;
+    color: aqua;
+  }
+  
+  .iconList > li > a:hover {
+    text-decoration: none;
+    color: greenyellow;
+  }
 
 @media (max-width: 800px){
     .flexBox{

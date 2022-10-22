@@ -22,11 +22,16 @@ function Project(){
                     </p>
                 </div>
             </div>
-                <div className="techStack">
-                    <h1>Tech Stack:</h1>
-                    <div className="iconList" dangerouslySetInnerHTML={{__html: stack}}>
-                    </div>
+            <div className="iconList">
+                <li><a href={data.state.github}><i className='fa fa-github fa-4x'></i></a></li>
+                <li><a href={data.state.github}><i className='fa fa-globe fa-4x'></i></a></li>
+
+            </div>
+            <div className="techStack">
+                <h1>Tech Stack:</h1>
+                <div className="iconList" dangerouslySetInnerHTML={{__html: stack}}>
                 </div>
+            </div>
         </div>
     )
 }

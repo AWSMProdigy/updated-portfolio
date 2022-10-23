@@ -17,7 +17,7 @@ function App() {
       <Nav></Nav>
       <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Project" element={<Project/>}/>
+          <Route path="/Project/:title" element={<Project/>}/>
       </Routes>
       <footer>
         <h1>Made with <i className="fa fa-heart pulse"></i> by Kyle Sousa</h1>

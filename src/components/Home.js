@@ -2,6 +2,7 @@ import '../App.css';
 import 'font-awesome/css/font-awesome.min.css';
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import catalogArray from '../projects.json';
 
 function Home() {
 
@@ -14,51 +15,13 @@ function Home() {
   const disp = {
     display: 'block'
   }
-
-  let catalogArray = [
-    {
-      name: "It's Dangerous To Go Alone",
-      desc: "It's Dangerous To Go Alone! A website designed to bring gamers together by connecting people with others of similar gaming interests, styles, and availability.",
-      stack: ["React", "MongoDB", "Express"],
-      picture: "Dangerous.JPG",
-      github: "https://github.com/AWSMProdigy/dangerous-to-go-alone"
-    },
-    {
-      name: "Reel Cinema",
-      desc: "Mock theater website with friend functionality and ticket ordering. Created to solve a problem with some modern theater websites.",
-      stack: ["HandleBarJS", "Express", "GraphQL"],
-      picture: "reelCinema.png",
-      github: "https://github.com/AWSMProdigy/Theater-website"
-    },
-    {
-      name: "Daily Felon",
-      desc: "Website meant to provide humor. Takes several pre-written stories and pictures and creates unique stories based off of comic book heroes and villains and randomly creates humorous stories with javascript.",
-      stack: ["HTML/CSS", "Javascript"],
-      picture: "Beau.JPG",
-      github: "https://github.com/JamesStitzel/The-Daily-Felon", 
-    },
-    {
-      name: "Twitter Bot",
-      desc: "Bot designed to display the latest tweet from a chosen individual. This was originally done to stay up to date on exclusive product news.",
-      stack: ["React", "Express"],
-      picture: "Twitter.JPG",
-      github: "https://github.com/AWSMProdigy/Twitter-bot"
-    },
-    {
-      name: "Navi Bot",
-      desc: "Discord bot designed to message 1 person at random on a discord server `Hey! Listen!` every hour. Works with any number of discord servers. Designed to be a funny side project, it gives me a laugh every time I get a notification and I see that the bot is working great. Is up and running and you can add this bot to your server here: https://discord.com/oauth2/authorize?client_id=1010365234797625466&permissions=0&scope=bot%20applications.commands",
-      stack: ["DiscordJS"],
-      picture: "Navi_(The_Legend_of_Zelda).png",
-      github: "https://github.com/AWSMProdigy/Navi-Discord-Bot"
-    }
-  ]
-
   
-  let catalogHtml = catalogArray.map((program) => <div className='project'>
+  let catalogHtml = catalogArray.map((program) => 
+                    <div key={program.name} className='project'>
                       <div className='projectImage'>
-                        <Link to="/Project" state={`${program}`}><img alt={`${program.name}`} src={`${require('../images/' + program.picture)}`}></img></Link>
-                        <h1>${program.name}</h1>
-                        <h2>${program.stack.join(', ')}</h2>
+                        <Link to={`/Project/${program.id}`} state={program}><img alt={program.name} src={require('../images/' + program.picture)}></img></Link>
+                        <h1>{program.name}</h1>
+                        <h2>{program.stack.join(', ')}</h2>
                       </div>
                     </div>
   )

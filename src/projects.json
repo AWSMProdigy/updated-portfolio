@@ -6,7 +6,7 @@
         "stack": ["React", "MongoDB", "Express"],
         "picture": "Dangerous.JPG",
         "github": "https://github.com/AWSMProdigy/dangerous-to-go-alone",
-        "link": "<></>"
+        "link": ""
     },
     {   
         "id": "ReelCinema",
@@ -15,7 +15,7 @@
         "stack": ["HandleBarJS", "Express", "GraphQL"],
         "picture": "reelCinema.png",
         "github": "https://github.com/AWSMProdigy/Theater-website",
-        "link": "<></>"
+        "link": ""
     },
     {
         "id": "DailyFelon",
@@ -24,7 +24,7 @@
         "stack": ["HTML/CSS", "Javascript"],
         "picture": "Beau.JPG",
         "github": "https://github.com/JamesStitzel/The-Daily-Felon", 
-        "link": "<></>"
+        "link": ""
     },
     {
         "id": "TwitterBot",
@@ -33,7 +33,7 @@
         "stack": ["React", "Express"],
         "picture": "Twitter.JPG",
         "github": "https://github.com/AWSMProdigy/Twitter-bot",
-        "link": "<></>"
+        "link": ""
     },
     {
         "id": "NaviBot",

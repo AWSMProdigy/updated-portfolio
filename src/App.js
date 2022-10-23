@@ -13,7 +13,8 @@ import { Link, useLocation } from "react-router-dom";
 function App() {
 
   return(
-    <BrowserRouter>
+    // <BrowserRouter>
+    <>
       <Nav></Nav>
       <Routes>
           <Route path="/" element={<Home />} />
@@ -22,7 +23,8 @@ function App() {
       <footer>
         <h1>Made with <i className="fa fa-heart pulse"></i> by Kyle Sousa</h1>
       </footer>
-    </BrowserRouter>
+    </>
+    // </BrowserRouter>
   )
 }
 

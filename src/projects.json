@@ -43,5 +43,14 @@
         "picture": "Navi_(The_Legend_of_Zelda).png",
         "github": "https://github.com/AWSMProdigy/Navi-Discord-Bot",
         "link": "<a href='https://discord.com/oauth2/authorize?client_id=1010365234797625466&permissions=0&scope=bot%20applications.commands'>Invite Navi to your server</a>"
+    },
+    {
+        "id": "KsenseChallenge",
+        "name": "Ksense React Challenge",
+        "desc": "Coding interview challenge in which I was instructed to retrieve users and posts from an API and organize all posts by user chosen",
+        "stack": ["React"],
+        "picture": "CodingChallenge.JPG",
+        "github": "https://github.com/AWSMProdigy/Ksense-React-Challenge",
+        "link": "<a href='https://awsmprodigy.github.io/Ksense-React-Challenge/'>View live implementation</a>"
     }
 ]

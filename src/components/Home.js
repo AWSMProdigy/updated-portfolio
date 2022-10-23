@@ -176,7 +176,7 @@ function Home() {
             <div className='bar'>
               <div className='skillBar frontBar'>
                 <span>Front-End</span>
-                <h1>75%</h1>
+                <h1>80%</h1>
               </div>
             </div>
             <div className='bar'>

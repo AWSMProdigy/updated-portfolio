@@ -12,6 +12,16 @@ import { Link, useLocation } from "react-router-dom";
 
 function App() {
 
+  useEffect(() => {
+    fetch("http://localhost:3001/api", 
+      {
+          mode: 'no-cors',
+      }
+    )
+    .then(res => res.json())
+    .then(res => console.log(res));
+  }, []);
+
   return(
     // <BrowserRouter>
     <>

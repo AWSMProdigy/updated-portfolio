@@ -13,6 +13,8 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "concurrently": "^7.5.0",
+    "express": "^4.18.2",
     "font-awesome": "^4.7.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -20,7 +22,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run react\"",
+    "server": "node server/index.js",
+    "react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -48,5 +52,6 @@
   "devDependencies": {
     "gh-pages": "^4.0.0",
     "react-router-dom": "^6.3.0"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }

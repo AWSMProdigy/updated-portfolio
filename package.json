@@ -18,11 +18,12 @@
     "font-awesome": "^4.7.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently --kill-others \"npm run server\" \"npm run react\"",
+    "start": "npm run react",
     "server": "node server/index.js",
     "react": "react-scripts start",
     "build": "react-scripts build",
@@ -52,6 +53,5 @@
   "devDependencies": {
     "gh-pages": "^4.0.0",
     "react-router-dom": "^6.3.0"
-  },
-  "proxy": "http://localhost:3001"
+  }
 }

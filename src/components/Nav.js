@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 function Nav(){
     const [menu, setmenu] = useState("false");
@@ -20,7 +21,7 @@ function Nav(){
     }
 
     function showNav() {
-    if(location.pathname === "/Project"){
+    if(location.pathname.includes("/Project")){
         return hidden;
     }else{
         return display;
@@ -62,11 +63,11 @@ function Nav(){
         </div>
         <div className="right" style={showNav()}>
           <ul className={"nav-links"}>
-            <a href="#Intro">Introduction</a>
-            <a href="#About">About</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Contact">Contact</a>
+            <HashLink smooth to="#Intro">Introduction</HashLink>
+            <HashLink smooth to="#About">About</HashLink>
+            <HashLink smooth to="#Skills">Skills</HashLink>
+            <HashLink smooth to="#Projects">Projects</HashLink>
+            <HashLink smooth to="#Contact">Contact</HashLink>
           </ul>
           <div className='mob-btn' onClick={showmenu}>
             <div className="mob-btn__burger"></div>
@@ -74,11 +75,11 @@ function Nav(){
         </div>
       </nav>
       <div className={"nav-links-mobile " + mobMenu} style={showNav()} onClick={showmenu}>
-        <a href="#Intro" id="introLink"><h1>Introduction</h1></a>
-        <a href="#About" id="aboutLink"><h1>About</h1></a>
-        <a href="#Projects" id="projectLink"><h1>Projects</h1></a>
-        <a href="#Skills" id="skillsLink"><h1>Skills</h1></a>
-        <a href="#Contact" id="contactLink"><h1>Contact</h1></a>
+        <HashLink smooth to="#Intro">Introduction</HashLink>
+        <HashLink smooth to="#About">About</HashLink>
+        <HashLink smooth to="#Skills">Skills</HashLink>
+        <HashLink smooth to="#Projects">Projects</HashLink>
+        <HashLink smooth to="#Contact">Contact</HashLink>
       </div>
       </>
     )

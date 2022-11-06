@@ -15,7 +15,7 @@
         "stack": ["HandleBarJS", "Express", "GraphQL"],
         "picture": "reelCinema.png",
         "github": "https://github.com/AWSMProdigy/Theater-website",
-        "link": ""
+        "link": "<a href='https://intense-lake-77911.herokuapp.com/'>Visit live implementation</a>"
     },
     {
         "id": "DailyFelon",

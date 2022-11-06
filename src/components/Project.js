@@ -31,7 +31,7 @@ function Project(){
             </div>
             <div className="techStack">
                 <h1>Tech Stack:</h1>
-                <div className="iconList" dangerouslySetInnerHTML={{__html: stack}}>
+                <div className="techList" dangerouslySetInnerHTML={{__html: stack}}>
                 </div>
             </div>
         </div>

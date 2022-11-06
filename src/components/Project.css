@@ -3,6 +3,7 @@
 }
 
 .projectDesc{
+    margin-top: 0;
     width: 40%;
 }
 
@@ -28,7 +29,7 @@
     text-align: center;
 }
 
-.iconList{
+.iconList, .techList{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -38,18 +39,23 @@
     width: fit-content;
     color: aqua;
     transition: all .2s ease-in-out;
-  
-  }
-  
-  .iconList > li > a:visited {
+}
+
+.iconList > li > a:visited {
     text-decoration: none;
     color: aqua;
-  }
-  
-  .iconList > li > a:hover {
+}
+
+.iconList > li > a:hover {
     text-decoration: none;
     color: greenyellow;
-  }
+}
+
+.techList > div{
+    flex: 1;
+}
+
+
 
 @media (max-width: 800px){
     .flexBox{
@@ -58,5 +64,14 @@
     .flexBox img{
         width: 80%;
         height: auto;
+    }
+
+    .projectDesc{
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .techList{
+        flex-direction: column;
     }
 }

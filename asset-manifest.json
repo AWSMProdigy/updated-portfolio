@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.298ede19.css",
-    "main.js": "/static/js/main.eb987862.js",
+    "main.css": "/static/css/main.dff7f17f.css",
+    "main.js": "/static/js/main.d82d956b.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/reelCinema.png": "/static/media/reelCinema.87348aa97df9a86729d0.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -16,12 +16,12 @@
     "static/media/Navi_(The_Legend_of_Zelda).png": "/static/media/Navi_(The_Legend_of_Zelda).dc523fe9b7a22e4cd386.png",
     "static/media/Twitter.JPG": "/static/media/Twitter.35aee46098272b0f7bd0.JPG",
     "index.html": "/index.html",
-    "main.298ede19.css.map": "/static/css/main.298ede19.css.map",
-    "main.eb987862.js.map": "/static/js/main.eb987862.js.map",
+    "main.dff7f17f.css.map": "/static/css/main.dff7f17f.css.map",
+    "main.d82d956b.js.map": "/static/js/main.d82d956b.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.298ede19.css",
-    "static/js/main.eb987862.js"
+    "static/css/main.dff7f17f.css",
+    "static/js/main.d82d956b.js"
   ]
 }

@@ -1,30 +1,19 @@
 [
     {
-        "id": "ItsDangerousToGoAlone",
-        "name": "It's Dangerous To Go Alone",
-        "desc": "It's Dangerous To Go Alone! A website designed to bring gamers together by connecting people with others of similar gaming interests, styles, and availability.",
-        "stack": ["React", "MongoDB", "Express"],
-        "picture": "Dangerous.JPG",
-        "github": "https://github.com/AWSMProdigy/dangerous-to-go-alone",
-        "link": "<a href='https://sheltered-taiga-89649.herokuapp.com/'>Visit Website</a>"
+        "id": "RealtorWebsite",
+        "name": "Ocala Land and Realty",
+        "desc": "Fully functioning website provided to realtor Jorge Sousa. Displays all of his listings and prompts clients to reach out and connect with Jorge.",
+        "stack": ["React", "Express"],
+        "picture": "ocalaRealty.png",
+        "link": "<a href='https://ocalalandandrealty.com/'>Visit Website</a>"
     },
     {   
-        "id": "ReelCinema",
-        "name": "Reel Cinema",
-        "desc": "Mock theater website with friend functionality and ticket ordering. Created to solve a problem with some modern theater websites.",
+        "id": "PestControlWebsite",
+        "name": "Accurate Pest Solutions",
+        "desc": "Website for Accurate Pest Solutions. Created as a replacement to an unnattractive rental website, this website is hosted and maintained by me, and allows potential customers to ask questions and connect with Accurate Pest Solutions.",
         "stack": ["HandleBarJS", "Express", "GraphQL"],
-        "picture": "reelCinema.png",
-        "github": "https://github.com/AWSMProdigy/Theater-website",
-        "link": "<a href='https://intense-lake-77911.herokuapp.com/'>Visit live implementation</a>"
-    },
-    {
-        "id": "DailyFelon",
-        "name": "Daily Felon",
-        "desc": "Website meant to provide humor. Takes several pre-written stories and pictures and creates unique stories based off of comic book heroes and villains and randomly creates humorous stories with javascript.",
-        "stack": ["HTML/CSS", "Javascript"],
-        "picture": "Beau.JPG",
-        "github": "https://github.com/JamesStitzel/The-Daily-Felon", 
-        "link": ""
+        "picture": "accupestPro.png",
+        "link": "<a href='https://accupest.pro/'>Visit live implementation</a>"
     },
     {
         "id": "TwitterBot",
@@ -43,14 +32,5 @@
         "picture": "Navi_(The_Legend_of_Zelda).png",
         "github": "https://github.com/AWSMProdigy/Navi-Discord-Bot",
         "link": "<a href='https://discord.com/oauth2/authorize?client_id=1010365234797625466&permissions=0&scope=bot%20applications.commands'>Invite Navi to your server</a>"
-    },
-    {
-        "id": "KsenseChallenge",
-        "name": "Ksense React Challenge",
-        "desc": "Coding interview challenge in which I was instructed to retrieve users and posts from an API and organize all posts by user chosen",
-        "stack": ["React"],
-        "picture": "CodingChallenge.JPG",
-        "github": "https://github.com/AWSMProdigy/Ksense-React-Challenge",
-        "link": "<a href='https://awsmprodigy.github.io/Ksense-React-Challenge/'>View live implementation</a>"
-    }
+    } 
 ]

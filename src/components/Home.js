@@ -247,7 +247,7 @@ function Home() {
 
       <div className="Page Projects" id="Projects">
           <div className='pageTitle'>
-            <h1>My Work</h1>
+            <h1>My Best Work</h1>
           </div>
           <div className='projectCatalog' id='projectCatalog'>
             {catalogHtml}

@@ -11,7 +11,7 @@
         "id": "PestControlWebsite",
         "name": "Accurate Pest Solutions",
         "desc": "Website for Accurate Pest Solutions. Created as a replacement to an unnattractive rental website, this website is hosted and maintained by me, and allows potential customers to ask questions and connect with Accurate Pest Solutions.",
-        "stack": ["HandleBarJS", "Express", "GraphQL"],
+        "stack": ["HandleBarJS", "Express"],
         "picture": "accupestPro.png",
         "link": "<a href='https://accupest.pro/'>Visit live implementation</a>"
     },

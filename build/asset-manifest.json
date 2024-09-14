@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.dff7f17f.css",
-    "main.js": "/static/js/main.d82d956b.js",
+    "main.js": "/static/js/main.c4adf107.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/reelCinema.png": "/static/media/reelCinema.87348aa97df9a86729d0.png",
+    "static/media/accupestPro.png": "/static/media/accupestPro.195a0aec44231f3bf882.png",
+    "static/media/ocalaRealty.png": "/static/media/ocalaRealty.1628559cdbad06bf9d41.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Beau.JPG": "/static/media/Beau.af398be19a78c7bf1fba.JPG",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -17,11 +19,11 @@
     "static/media/Twitter.JPG": "/static/media/Twitter.35aee46098272b0f7bd0.JPG",
     "index.html": "/index.html",
     "main.dff7f17f.css.map": "/static/css/main.dff7f17f.css.map",
-    "main.d82d956b.js.map": "/static/js/main.d82d956b.js.map",
+    "main.c4adf107.js.map": "/static/js/main.c4adf107.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dff7f17f.css",
-    "static/js/main.d82d956b.js"
+    "static/js/main.c4adf107.js"
   ]
 }

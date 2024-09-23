@@ -264,6 +264,7 @@ nav{
   margin-top: auto;
   margin-bottom: auto;
   text-align: left;
+  margin-right: 20px;
 }
 
 .pageTextCenter > p{
@@ -277,6 +278,7 @@ nav{
 
 .skillBarContainer{
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .skillBar{
@@ -438,6 +440,11 @@ spacer{
 .Contact{
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.Contact .pageTitle{
+  margin-left: auto;
+
 }
 
 .headshot, .mouse {

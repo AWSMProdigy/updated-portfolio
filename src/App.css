@@ -215,8 +215,8 @@ nav{
 
 .nameTitle{
   color:aqua;
-  font-size: 120px;
   margin-bottom: 20px;
+  font-size: 120px;
 }
 
 .introBox{
@@ -655,6 +655,9 @@ footer h1 svg{
   .pageTitle{
     margin-left: auto;
     text-align: center;
+  }
+
+  .pageTitle h1{
     font-size: 72px;
   }
 
@@ -664,6 +667,7 @@ footer h1 svg{
 
   .pageTextCenter{
     max-width: 100%;
+    text-align: center;
   }
 
   .decryptLine{
@@ -682,5 +686,19 @@ footer h1 svg{
 
   .project img{
     max-width: 100%;
+  }
+}
+
+@media (max-width:600px){
+  .pageTitle h1{
+    font-size: 60px;
+  }
+
+  .nameTitle{
+    font-size: 72px;
+  }
+
+  .nameNav{
+    font-size: 24px;
   }
 }

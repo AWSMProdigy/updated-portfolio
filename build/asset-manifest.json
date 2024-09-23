@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7871402.css",
+    "main.css": "/static/css/main.a8bdde4d.css",
     "main.js": "/static/js/main.611a3be3.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/accupestProBig.png": "/static/media/accupestProBig.2938c95b8b6629b66b52.png",
@@ -20,12 +20,12 @@
     "static/media/Navi_(The_Legend_of_Zelda).png": "/static/media/Navi_(The_Legend_of_Zelda).dc523fe9b7a22e4cd386.png",
     "static/media/Twitter.JPG": "/static/media/Twitter.35aee46098272b0f7bd0.JPG",
     "index.html": "/index.html",
-    "main.d7871402.css.map": "/static/css/main.d7871402.css.map",
+    "main.a8bdde4d.css.map": "/static/css/main.a8bdde4d.css.map",
     "main.611a3be3.js.map": "/static/js/main.611a3be3.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7871402.css",
+    "static/css/main.a8bdde4d.css",
     "static/js/main.611a3be3.js"
   ]
 }

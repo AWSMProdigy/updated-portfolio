@@ -54,14 +54,12 @@ function Nav(){
         <div className="left">
           <Link to={"/"}>
             <div className='nameNav'>
-              <h3>Kyle Sousa</h3>
-              <h5>Full-Stack Web Developer</h5>
+              <h1>Kyle Sousa</h1>
+              {/* <h5>Full-Stack Web Developer</h5> */}
             </div>
           </Link>
         </div>
         <div className="name">
-        </div>
-        <div className="right" style={showNav()}>
           <ul className={"nav-links"}>
             <HashLink smooth to="#Intro">Introduction</HashLink>
             <HashLink smooth to="#About">About</HashLink>
@@ -69,6 +67,12 @@ function Nav(){
             <HashLink smooth to="#Projects">Projects</HashLink>
             <HashLink smooth to="#Contact">Contact</HashLink>
           </ul>
+        </div>
+        <div className="right" style={showNav()}>
+          <h2>Kylesousa756@gmail.com</h2>
+          <div className="contactButton">
+            <a href="mailto: kylesousa756@gmail.com">LET'S TALK</a>
+          </div>
           <div className='mob-btn' onClick={showmenu}>
             <div className="mob-btn__burger"></div>
         </div>

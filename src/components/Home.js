@@ -19,9 +19,23 @@ function Home() {
   let catalogHtml = catalogArray.map((program) => 
                     <div key={program.name} className='project'>
                       <div className='projectImage'>
-                        <Link to={`/Project/${program.id}`} state={program}><img alt={program.name} src={require('../images/' + program.picture)}></img></Link>
-                        <h1>{program.name}</h1>
-                        <h2>{program.stack.join(', ')}</h2>
+                        <a href={program.directLink} target="_blank" rel="noreferrer noopener" state={program}style={{backgroundImage: `url('static/media/${program.picture}')`, boxShadow: 'inset 0 0 0 2000px rgba(0, 0, 0, 0.45)'}}>
+                          <div style={{bottom: '20px', position: "absolute"}}>
+                            <div className='projectHeader'>
+                              <h1>{program.name}</h1>
+                              <h2>{program.type}</h2>
+                            </div>
+                            <spacer></spacer>
+                            <div className='projectHeader'>
+                              <h3 style={{maxWidth: "400px", textAlign: "left", marginBottom: "20px"}}>{program.desc}</h3>
+                              <div>
+                              {program.stack.map((tech) => 
+                                <h3 style={{maxWidth: "400px", textAlign: "right"}}>{tech}</h3>
+                              )}
+                              </div>
+                            </div>
+                          </div>
+                        </a>
                       </div>
                     </div>
   )
@@ -146,12 +160,12 @@ function Home() {
     <div className="App">
       <div className="Page Intro" id="Intro">
         <div className='introText'>
-          <h1 className='nameTitle'>Hi, I'm Kyle Sousa,</h1>
-          <h2>A full-stack web developer</h2>
-          <h3>who loves building efficient and complex solutions to keep the user experience easy and streamlined.</h3>
+          <h1 className='nameTitle'>Full Stack Web Developer</h1>
+          <h3>With the good fortune of having worked with clients as an individual and as a team, I've seen all facets of web development. From sales, development, and client relations, I understand
+            the process and the trials and tribulations found throughout. Skilled in both front-end and back-end development, I excel at translating complex requirements into user-friendly, visually engaging digital solutions that enhance user experience and drive engagement.
+          </h3>
           <h1 className='decryptLine'>I <span className='encryptWord' onClick={pageDecrypt} word-data={["love", "adore", "enjoy", "value"]}>____</span> what I do</h1>
         </div>
-        <img className="imgBox" src={require('../images/me.jpg')}></img>
       </div>
 
       <div className="Page About" id="About">
@@ -164,8 +178,9 @@ function Home() {
             <p>The satisfaction and pride from perfecting a creation, whether it be a whole website or a single function, keeps me coming back to create more and more.</p>
             <p>I am motivated to fully commit myself to a team and a project and create something that lasts.</p>
             <p>My time as a company commander in JROTC taught me the importance of working as a team and respecting the chain of command.</p>
-            <p>On a more personal note, I'm very passionate about video games(I could give you a discertation on any video game subject if you gave me enough time), and this led me to my interest in computers.</p>
+            {/* <p>On a more personal note, I'm very passionate about video games(I could give you a discertation on any video game subject if you gave me enough time), and this led me to my interest in computers.</p> */}
           </div>
+          <img className="imgBox" src={require('../images/me.jpg')}></img>
         </div>
       </div>
       <div className="Page Skills" id="Skills">
@@ -202,9 +217,9 @@ function Home() {
             <div>
               <h2>Languages:</h2>
               <div>
+               <li>Javascript</li>
                 <li>Python</li>
                 <li>C++</li>
-                <li>Javascript</li>
                 <li>GO</li>
                 <li>PHP</li>
                 <li>GraphQL</li>
@@ -214,12 +229,12 @@ function Home() {
             <div>
               <h2>Frameworks:</h2>
               <div>
+                <li>NodeJS</li>
                 <li>ReactJS</li>
                 <li>Python Django</li>
                 <li>ExpressJs</li>
                 <li>AngularJS</li>
                 <li>HandlebarsJS</li>
-                <li>NodeJS</li>
                 <li>Bootstrap</li>
               </div>
             </div>

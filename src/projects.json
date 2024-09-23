@@ -4,33 +4,45 @@
         "name": "Ocala Land and Realty",
         "desc": "Fully functioning website provided to realtor Jorge Sousa. Displays all of his listings and prompts clients to reach out and connect with Jorge.",
         "stack": ["React", "Express"],
-        "picture": "ocalaRealty.png",
-        "link": "<a href='https://ocalalandandrealty.com/'>Visit Website</a>"
+        "picture": "ocalaRealtyBig.f30e84c659ea98714f01.png",
+        "localPic": "ocalaRealtyBig.png",
+        "link": "<a href='https://ocalalandandrealty.com/'>Visit Website</a>",
+        "type": "Website",
+        "directLink": "https://ocalalandandrealty.com/"
     },
     {   
         "id": "PestControlWebsite",
         "name": "Accurate Pest Solutions",
         "desc": "Website for Accurate Pest Solutions. Created as a replacement to an unnattractive rental website, this website is hosted and maintained by me, and allows potential customers to ask questions and connect with Accurate Pest Solutions.",
         "stack": ["HandleBarJS", "Express"],
-        "picture": "accupestPro.png",
-        "link": "<a href='https://accupest.pro/'>Visit live implementation</a>"
+        "picture": "accupestProBig.2938c95b8b6629b66b52.png",
+        "localPic": "accupestProBig.png",
+        "link": "<a href='https://accupest.pro/'>Visit live implementation</a>",
+        "type": "Website",
+        "directLink": "https://accupest.pro/"
     },
     {
         "id": "TwitterBot",
         "name": "Twitter Bot",
         "desc": "Bot designed to display the latest tweet from a chosen individual. This was originally done to stay up to date on exclusive product news.",
         "stack": ["React", "Express"],
-        "picture": "Twitter.JPG",
+        "picture": "Twitter.35aee46098272b0f7bd0.JPG",
+        "localPic": "Twitter.JPG",
         "github": "https://github.com/AWSMProdigy/Twitter-bot",
-        "link": ""
+        "link": "",
+        "type": "API Access",
+        "directLink": "https://github.com/AWSMProdigy/Twitter-bot"
     },
     {
         "id": "NaviBot",
         "name": "Navi Bot",
         "desc": "Discord bot designed to message 1 person at random on a discord server `Hey! Listen!` every hour. Works with any number of discord servers. Designed to be a funny side project, it gives me a laugh every time I get a notification and I see that the bot is working great. Is up and running and you can add this bot to your server here:",
         "stack": ["DiscordJS"],
-        "picture": "Navi_(The_Legend_of_Zelda).png",
+        "picture": "Navi_(The_Legend_of_Zelda).dc523fe9b7a22e4cd386.png",
+        "localPic": "Navi_(The_Legend_of_Zelda).png",
         "github": "https://github.com/AWSMProdigy/Navi-Discord-Bot",
-        "link": "<a href='https://discord.com/oauth2/authorize?client_id=1010365234797625466&permissions=0&scope=bot%20applications.commands'>Invite Navi to your server</a>"
+        "link": "<a href='https://discord.com/oauth2/authorize?client_id=1010365234797625466&permissions=0&scope=bot%20applications.commands'>Invite Navi to your server</a>",
+        "type": "Bot",
+        "directLink": "https://github.com/AWSMProdigy/Navi-Discord-Bot"
     } 
 ]

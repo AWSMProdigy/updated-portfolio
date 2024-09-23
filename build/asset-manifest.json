@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.dff7f17f.css",
-    "main.js": "/static/js/main.c4adf107.js",
+    "main.css": "/static/css/main.44e73b5f.css",
+    "main.js": "/static/js/main.afce7434.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/accupestProBig.png": "/static/media/accupestProBig.2938c95b8b6629b66b52.png",
     "static/media/reelCinema.png": "/static/media/reelCinema.87348aa97df9a86729d0.png",
     "static/media/accupestPro.png": "/static/media/accupestPro.195a0aec44231f3bf882.png",
+    "static/media/ocalaRealtyBig.png": "/static/media/ocalaRealtyBig.f30e84c659ea98714f01.png",
     "static/media/ocalaRealty.png": "/static/media/ocalaRealty.1628559cdbad06bf9d41.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Beau.JPG": "/static/media/Beau.af398be19a78c7bf1fba.JPG",
@@ -18,12 +20,12 @@
     "static/media/Navi_(The_Legend_of_Zelda).png": "/static/media/Navi_(The_Legend_of_Zelda).dc523fe9b7a22e4cd386.png",
     "static/media/Twitter.JPG": "/static/media/Twitter.35aee46098272b0f7bd0.JPG",
     "index.html": "/index.html",
-    "main.dff7f17f.css.map": "/static/css/main.dff7f17f.css.map",
-    "main.c4adf107.js.map": "/static/js/main.c4adf107.js.map",
+    "main.44e73b5f.css.map": "/static/css/main.44e73b5f.css.map",
+    "main.afce7434.js.map": "/static/js/main.afce7434.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dff7f17f.css",
-    "static/js/main.c4adf107.js"
+    "static/css/main.44e73b5f.css",
+    "static/js/main.afce7434.js"
   ]
 }

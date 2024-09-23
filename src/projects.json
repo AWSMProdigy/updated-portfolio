@@ -36,7 +36,7 @@
     {
         "id": "NaviBot",
         "name": "Navi Bot",
-        "desc": "Discord bot designed to message 1 person at random on a discord server `Hey! Listen!` every hour. Works with any number of discord servers. Designed to be a funny side project, it gives me a laugh every time I get a notification and I see that the bot is working great. Is up and running and you can add this bot to your server here:",
+        "desc": "Discord bot designed to message 1 person at random on a discord server `Hey! Listen!` every hour. Works with any number of discord servers. Designed to be a funny side project, it gives me a laugh every time I get a notification and I see that the bot is working great.",
         "stack": ["DiscordJS"],
         "picture": "Navi_(The_Legend_of_Zelda).dc523fe9b7a22e4cd386.png",
         "localPic": "Navi_(The_Legend_of_Zelda).png",

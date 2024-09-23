@@ -200,7 +200,7 @@ nav{
 }
 
 .pageTitle h1{
-  font-size: 95px;
+  font-size: 96px;
 }
 
 .Intro{
@@ -352,11 +352,11 @@ spacer{
 .projectImage{
   position: relative;
   color: white;
-  min-height: 500px;
+  min-height: 60vh;
 }
 
 .projectImage a {
-  min-height: 500px;
+  min-height: 60vh;
   display: block;
   background-attachment: fixed;
   background-position: center;
@@ -557,6 +557,12 @@ footer h1 svg{
 
 @media (max-width:1200px){
 
+  .nameTitle{
+    color:aqua;
+    font-size: 96px;
+    margin-bottom: 20px;
+  }
+
   .right h2{
     display: none;
   }
@@ -575,6 +581,10 @@ footer h1 svg{
 
   .projectHeader h3{
     text-align: center !important;
+  }
+
+  .projectHeader h1{
+    font-size: 60px;
   }
 
   .mob-btn{
@@ -645,6 +655,7 @@ footer h1 svg{
   .pageTitle{
     margin-left: auto;
     text-align: center;
+    font-size: 72px;
   }
 
   .pageText{

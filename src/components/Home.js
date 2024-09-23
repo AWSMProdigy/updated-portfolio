@@ -20,7 +20,7 @@ function Home() {
                     <div key={program.name} className='project'>
                       <div className='projectImage'>
                         <a href={program.directLink} target="_blank" rel="noreferrer noopener" state={program}style={{backgroundImage: `url('static/media/${program.picture}')`, boxShadow: 'inset 0 0 0 2000px rgba(0, 0, 0, 0.45)'}}>
-                          <div style={{bottom: '20px', position: "absolute"}}>
+                          <div style={{position: "absolute", left: "0px", right: "0px", top: "50%", transform: "translateY(-50%)"}}>
                             <div className='projectHeader'>
                               <h1>{program.name}</h1>
                               <h2>{program.type}</h2>
